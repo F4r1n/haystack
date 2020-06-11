@@ -1,0 +1,25 @@
+Königs-Zeitrechnung, auch Königs-Kalender, (Original:  King's Reckoning) war das in Númenor und den westlichen Gebieten von Mittelerde bis etwa 2100 Drittes Zeitalter (D.Z.) verwendete Kalendersystem, eine Synthese der Zeitrechnungen der Eldar und der Edain.
+Die Númenórer nämlich führten anstelle der enquië von 6 Tagen eine Woche von 7 Tagen ein. Das Jahr war eingeteilt in zwölf astar oder Monate, von denen zehn je 30 Tage und zwei je 31 Tage hatten. Eine Reihe von zusätzlichen Tagen kam noch hinzu, sodass sich eine Gesamtlänge von 365 Tagen ergab.
+Der Kalender für ein Jahr gliederte sich wie folgt:
+yestarë: erster Tag
+* Narvinyë: 30 Tage, Januar
+* Nénimë: 30 Tage, Februar
+* Súlimë: 30 Tage, März
+* Víressë: 30 Tage, April
+* Lótessë: 30 Tage, Mai
+* Nárië: 31 Tage, Juni
+loëndë: Mittsommertag
+* Cermië: 31 Tage, Juli
+* Úrimë (auch Urime): 30 Tage, August
+* Yavannië: 30 Tage, September
+* Narquelië: 30 Tage, Oktober
+* Hísimë: 30 Tage, November
+* Ringarë: 30 Tage, Dezember
+mettarë: letzter Tag
+Mit der Wintersonnenwende begann das Jahr. In Schaltjahren – jedes vierte Jahr außer dem letzten eines Jahrhunderts (haranyë) – wurde der eine loëndë durch zwei enderi oder Mitteltage ersetzt. Aufgrund des „Defizits“ (die Abweichung in der Königs-Zeitrechnung zwischen berechnetem und astronomischem Jahr und, im übertragenen Sinne, die Korrekturen, um diese auszugleichen) wurden weitere Angleichungen vorgenommen.
+Die Königs-Zeitrechnung wurde um 2100 D.Z. von der Truchsessen-Zeitrechnung ersetzt und zwar überall im westronsprachigen Gebiet außer in der Auenland-Zeitrechnung. Die oben aufgeführten Quenya-Namen wurden überall verwendet, außer bei den Dúnedain des Nordens, die Bezeichnungen aus dem Sindarin gebrauchten. Ebenso bei den Hobbits, die hatten sie seit langem in die Menschensprache umgesetzt.
+== Quellen ==
+J. R. R. Tolkien:  Anhänge, Anhang D: Die Kalender
+* Übersetzer: Margaret Carroux und E.-M. von Freymann
+J. R. R. Tolkien: Der Herr der Ringe: Anhänge, Anhang D: Die Kalender, Übersetzer: Wolfgang Krege
+Zeitrechnung

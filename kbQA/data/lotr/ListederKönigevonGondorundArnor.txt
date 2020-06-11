@@ -1,0 +1,21 @@
+{| border="1" width = "100%" border="1" cellpadding="4" cellspacing="0" style="margin: 0.5em 1em 0.5em 0; border: 1px #aaa solid; border-collapse: collapse;"
+|colspan = "3" bgcolor = "002c11" align="center"|Hochkönige von Arnor und Gondor
+|-
+!width = "20%"|Name
+!width = "10%"|Herrschaft
+!width = "20%"|Bemerkungen
+|-
+|Elendil
+|3320–3441 Z.Z.
+|Sohn AmandilsHochkönig von Gondor und Arnor
+|}
+Liste
+ 
+ 
+ 
+ 
+Kings of Gondor
+Rois du Gondor
+Re di Gondor
+Królowie Gondoru
+Король Гондора

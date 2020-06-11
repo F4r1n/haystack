@@ -1,0 +1,121 @@
+Tengwar (sg. Tengwa) kommt aus der Elben-Sprache Quenya und bedeutet "Lettern".
+Dieses Schreibsystem der Elben wurde von Feanor in Eldamar auf der Grundlage früherer Buchstaben, der "sarati", entwickelt. Das Grundsystem bestand aus 36 Buchstaben, wobei jeder Buchstabe einen Quenya-Namen besaß. Dieser Name bestand aus einem Wort, welches den Laut enthielt, mit dem der Buchstabe in dieser Sprache gleichgesetzt wurde (z.B. "formen" = Norden (Quenya); ist der Name für das 10. Zeichen der Tengwar-Schrift und wird mit dem Laut f gleichgesetzt).
+Tengwar wurde stets mit Pinsel oder Feder geschrieben.
+Die Inschrift auf dem Einen Ring wurde von Sauron in der Schwarzen Sprache, aber mit Buchstaben der Tengwar-Schrift, geschrieben.
+== Zeichentabelle ==
+{| border="1" cellpadding="1" cellspacing="1" class="article-table" style="margin: 0px auto; width: 500px;"
+| colspan="8" rowspan="1" style="text-align: center;"|Die Tengwar-Reihe:
+|-
+| colspan="2" rowspan="1" style="text-align: center;"|Tincotéma
+| colspan="2" rowspan="1" style="text-align: center;"|Parmatéma
+| colspan="2" rowspan="1" style="text-align: center;"|Calmatéma
+| colspan="2" rowspan="1" style="text-align: center;"|Quessetéma
+|-
+|
+|tTinco/Tó
+|
+|pParma/Pí
+|
+|tsch (wie ch in engl. church) Calma/Ché
+|
+|kQuesse/Ká
+|-
+|
+|dAndo/Dó
+|
+|bUmbar/Bí
+|
+|jAnga/Jé
+|
+|gUngwe/Gá
+|-
+|
+|th (wie th in engl. thing)Súle/Thó
+|
+|fFormen/Fí
+|
+|shAha/Shé
+|
+|ch/h (wie in ach)Hwesta/Aha (or Oha)
+|-
+|
+|dh (wie th in engl. there)Anto/Adhó
+|
+|vAmpa/Ví
+|
+|zhAnca/Izhe
+|
+|ghUnque/Agha
+|-
+|
+|nNúmen/Nó
+|
+|mMalta/Mí
+|
+|nyNoldo/Nyé
+|
+|ngNwalme/Ngá
+|-
+|
+| -r/rÓre/Ar
+|
+|w, -u/wVala/Wí
+|
+| -i/yAnna/Yé
+|
+|’?’á
+|-
+| colspan="8" style="text-align: center;"|Zusätzliche Tengwar:
+|-
+|
+|rRómen/Aro
+|
+|rhArda/Rho
+|
+|lLambe/Alo
+|
+|lhAlda/Lho
+|-
+|
+|sSilme/Só
+|
+|sSilme Nuquerna/Ós
+|
+|ss/zEsse/Azo
+|
+|zOza
+|-
+|
+|hHyarmen/Há
+|
+|i-, -eYanta/Ai
+|
+|whHwesta Sindarinwa/Whí
+|
+| -u?Úre/Au
+|}
+{| border="1" cellpadding="1" cellspacing="1" class="article-table" style="margin: 0px auto; width: 500px;"
+| colspan="6" rowspan="1" style="text-align: center;"|Tehtar für die Vokale
+|-
+|
+|
+|
+|
+|
+|
+|-
+|a
+|e
+|i
+|o
+|u
+|y
+|}
+== Quellen: ==
+Robert Foster: Das große Mittelerde Lexikon. Eine alphabetische Reise zur Fantasy-Welt von J. R. R. Tolkien. 2002
+Schrift
+Tengwar
+Tengwar
+Tengwar
+Tengwar
+Тенгвар

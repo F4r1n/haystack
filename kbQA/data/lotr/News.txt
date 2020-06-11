@@ -1,0 +1,10 @@
+Hier findet ihr alle als "News" gekennzeichneten Blogbeiträge.
+Jeder Benutzer kann hier aktuelle Informationen zu den Büchern, Filmen, Spielen oder auch zum Wiki selbst einstellen. Dazu müsst ihr einfach einen neuen Blog erstellen und ihn zur Kategorie:News hinzufügen.
+Um neue Beiträge sehen zu können, müsst ihr möglicherweise diese Liste im Speicher [ aktualisieren].
+== Aktuelle News ==
+News
+plain
+date
+News
+ 
+News

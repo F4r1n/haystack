@@ -1,0 +1,21 @@
+Die Lithetage sind drei Sommertage im Auenland-Kalender zwischen den Monaten. Sie werden Vorlithe und Nachlithe genannt.
+{| border="0" cellpadding="1" cellspacing="1" class="article-table" style="width: 500px;"
+|-
+! scope="col"|normales Jahr
+! scope="col"|Schaltjahr
+|-
+|Vorlithe
+|Vorlithe
+|-
+|Mittjahrstag
+|MIttjahrstag
+|-
+|
+|Überlithe
+|-
+|Nachlithe
+|Nachlithe
+|}
+==Quelle==
+Robert Foster, Das große Mittelerde-Lexikon, Übersetzer Helmut W. Pesch, 2013
+Zeitrechnung
