@@ -138,6 +138,7 @@ dmypy.json
 .idea
 
 # haystack files
+data
 haystack/database/qa.db
 mlruns
 src
@@ -147,3 +148,6 @@ tutorials/model
 model
 
 .DS_Store
+
+model.ckpt
+pytorch_model.bin
