@@ -1,4 +1,10 @@
 {
   "tokenizer": "BertTokenizer",
-  "tasks": ""
+  "max_seq_len": 512,
+  "train_filename": null,
+  "dev_filename": null,
+  "test_filename": null,
+  "dev_split": null,
+  "data_dir": null,
+  "tasks": {}
 }
