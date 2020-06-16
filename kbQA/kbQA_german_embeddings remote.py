@@ -18,7 +18,7 @@ if __name__ == '__main__':
     # Start new server or connect to a running one. true and false respectively
     LAUNCH_ELASTICSEARCH = False
     # Determines whether the Elasticsearch Server has to be populated with data or not
-    POPULATE_DOCUMENT_STORE = True
+    POPULATE_DOCUMENT_STORE = False
 
     if LAUNCH_ELASTICSEARCH:
         logging.info("Starting Elasticsearch ...")
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     # We can use the `EmbeddingRetriever` for this purpose and specify a model that we use for the embeddings.
     #
     retriever = EmbeddingRetriever(
-        document_store=document_store, embedding_model=os.getcwd()+"\\kbQA\\bert-german-model", gpu=True, model_format="farm")
+        document_store=document_store, embedding_model="bert-base-german-cased", gpu=True)
 
     if POPULATE_DOCUMENT_STORE:
         # set path to directory conating the text files
@@ -70,13 +70,15 @@ if __name__ == '__main__':
         # Now, let's write the docs to our DB.
         document_store.write_documents(docs_to_index)
 
-    # reader = TransformersReader(
-    #     model="distilbert-base-uncased-distilled-squad", tokenizer="distilbert-base-uncased", use_gpu=-1)
+    reader = TransformersReader(
+        model="bert-base-german-cased", tokenizer="bert-base-german-cased", use_gpu=0)
 
     # # Init reader & and use Finder to get answer (same as in Tutorial 1)
-    # finder = Finder(reader=reader, retriever=retriever)
+    finder = Finder(reader=reader, retriever=retriever)
 
-    # prediction = finder.get_answers(
-    #     question="Who is the father of Arya?", top_k_reader=3, top_k_retriever=5)
+    question = "Wer ist Legolas?".lower()
 
-    # print_answers(prediction, details="all")
+    prediction = finder.get_answers(
+        question=question, top_k_reader=3, top_k_retriever=5)
+
+    print_answers(prediction, details="all")
