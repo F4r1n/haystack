@@ -63,6 +63,7 @@ def main():
 
 
     question = "Wie viele haben Angst um ihren Job?"
+    # question = "Wer ist besonders schlecht gelaunt?"
     question = question.lower()  # auch hier wieder: Kleinschreibung zwingend notwendig!
 
     # Wir können aktuell keinen Reader verwenden, da diese scheinbar QA fine tuning voraussetzen
@@ -71,6 +72,10 @@ def main():
     finder = Finder(reader=None, retriever=retriever)
     prediction = finder.get_answers_via_similar_questions(question, top_k_retriever=2)
     print_answers(prediction, details="all")
+
+    # Idee:
+    # doc -> langer Text -> Paragraph -> embedding == ungenau
+    # doc -> langer text -> Satz 1 Satz 2 Satz 3 -> embedding 1 embedding 2 embedding 3 == deutlich genauer
 
 
 if __name__ == '__main__':
