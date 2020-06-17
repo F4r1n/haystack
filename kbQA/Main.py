@@ -34,12 +34,14 @@ def main():
                                                 excluded_meta_data=["question_emb"])
 
     retriever = EmbeddingRetriever(
-        document_store=document_store, embedding_model=os.getcwd() + "/kbQA/bert-german-model",
+        document_store=document_store, embedding_model=os.getcwd() +
+        "\\kbQA\\bert-german-model",
         gpu=True, model_format="transformers")
 
     if POPULATE_DOCUMENT_STORE:
-        doc_dir = os.getcwd() + "/kbQA/data/test"
-        dicts = convert_files_to_dicts(dir_path=doc_dir, clean_func=clean_text, split_paragraphs=True)
+        doc_dir = os.getcwd() + "\\kbQA\\data\\test"
+        dicts = convert_files_to_dicts(
+            dir_path=doc_dir, clean_func=clean_text, split_paragraphs=True)
         df = pd.DataFrame.from_dict(dicts)
 
         # Hier muss man aufpassen! Wir erzeugen an dieser Stelle keine embeddings für die questions, sondern für
@@ -61,16 +63,16 @@ def main():
         docs_to_index = df.to_dict(orient="records")
         document_store.write_documents(docs_to_index)
 
-
-    question = "Wie viele haben Angst um ihren Job?"
-    # question = "Wer ist besonders schlecht gelaunt?"
+    # question = "Wie viele haben Angst um ihren Job?"
+    question = "wer glaubt dass der eigene Job die Krise überleben werde?"
     question = question.lower()  # auch hier wieder: Kleinschreibung zwingend notwendig!
 
     # Wir können aktuell keinen Reader verwenden, da diese scheinbar QA fine tuning voraussetzen
     # Der Retriever holt anhand der embeddings die besten Treffer ran.
     # get_answers() ohne reader nicht verwendbar
     finder = Finder(reader=None, retriever=retriever)
-    prediction = finder.get_answers_via_similar_questions(question, top_k_retriever=2)
+    prediction = finder.get_answers_via_similar_questions(
+        question, top_k_retriever=2)
     print_answers(prediction, details="all")
 
     # Idee:

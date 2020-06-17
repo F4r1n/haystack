@@ -2,6 +2,7 @@ import logging
 import tarfile
 import tempfile
 import zipfile
+import docx
 from pathlib import Path
 from typing import Callable, List, Optional
 
@@ -26,7 +27,8 @@ def convert_files_to_dicts(dir_path: str, clean_func: Optional[Callable] = None,
 
     file_paths = [p for p in Path(dir_path).glob("**/*")]
     if ".pdf" in [p.suffix.lower() for p in file_paths]:
-        pdf_converter = PDFToTextConverter()  # type: Optional[PDFToTextConverter]
+        # type: Optional[PDFToTextConverter]
+        pdf_converter = PDFToTextConverter()
     else:
         pdf_converter = None
 
@@ -35,11 +37,18 @@ def convert_files_to_dicts(dir_path: str, clean_func: Optional[Callable] = None,
         if path.suffix.lower() == ".txt":
             with open(path) as doc:
                 text = doc.read()
-        elif path.suffix.lower() == ".pdf" and pdf_converter:
+        elif path.suffix.lower() == ".pdf":
             pages = pdf_converter.extract_pages(path)
             text = "\n".join(pages)
+        elif path.suffix.lower() == ".docx":
+            doc = docx.Document(path)
+            fullText = []
+            for para in doc.paragraphs:
+                fullText.append(para.text)
+            text = '\n'.join(fullText)
         else:
-            raise Exception(f"Indexing of {path.suffix} files is not currently supported.")
+            raise Exception(
+                f"Indexing of {path.suffix} files is not currently supported.")
 
         if clean_func:
             text = clean_func(text)
@@ -95,4 +104,3 @@ def fetch_archive_from_http(url: str, output_dir: str, proxies: Optional[dict] =
                 tar_archive.extractall(output_dir)
             # temp_file gets deleted here
         return True
-
