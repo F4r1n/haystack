@@ -1,0 +1,433 @@
+
+gesprchsleitfaden k1 | outbound | sp | version vom 08.07.2019
+fahrzeug-hersteller...........................................renault / nissan kunden-gruppe.....................................................finanzierung / leasing produkte ................................................................ securplus kampagnen-infos: sie rufen kunden der renault- bzw. nissan-bank an, die eine finanzierung bzw. leasing fr ein auto abgeschlossen haben. dabei wurde das zusatzprodukt ,,securplus" bei vertragsabschluss nicht mit abgeschlossen. ihre aufgabe ist es, die kunden davon zu berzeugen, diesen zusatz mit in die finanzierung / das leasing aufzunehmen.
+legende: textbaustein (zwingend und wortwrtlich so zu kommunizieren) textbaustein (vom agenten bei bedarf leicht modulierbar) textvariable (je nach kunde) voicefile-prozess kunden-reaktion
+bitte beachten
+1. begrung
+gesprch mit k1 suchen.
+aufzeichnung ohne kundenstimme starten ,,guten tag, mein name ist < vorname nachname > von der renault bank / nissan bank! frau / herrn ... mchte ich gerne kurz sprechen."
+k1 nicht erreichbar.
+,,wann und unter welcher nummer kann ich denn frau / herrn ... am besten erreichen?"
+achtung: wiedervorlage-datum muss
+innerhalb des aktionszeitraums liegen.
+gesprchspartner hat frage / rekla
+,,da knnen wir ihnen gerne weiterhelfen. ich leite den sachverhalt sofort an den zustndigen kollegen weiter. er meldet sich dann bei ihnen oder schickt ihnen direkt die notwendigen informationen zu."
+nur in ausnahmefllen drfen das gesprch und der abschluss mit k2 oder einem dritten erfolgen. dafr ab hier mit dem gspl fr k2 fortfahren.
+seite 1 von 7
+confidential c
+bitte beachten
+2. g r u n d d e s a n r u f s
+frau / herr ... sie haben ja ihren renault / nissan < modell > ber die renault bank / nissan bank finanziert. ich melde mich heute bei ihnen, da ich noch wichtige informationen fr sie zum vorteil ihrer finanzierung / ihres leasings habe."
+,,ja" oder ,,nein" zwingend einzuholen. ,,vorab noch ein hinweis: aus qualittsgrnden zeichnen wir die gesprche auf. ich nehme an, das ist in ordnung fr sie?"
+kunde verneint: aufzeichnung komplett stoppen.
+kunden-geburtsdatum zu legitimationszwecken abgleichen
+einwandbehandlung
+kunde bejaht: aufzeichnung inkl. kundenstimme starten und: ,,vielen dank. ich habe die aufnahme gestartet und damit waren sie einverstanden frau / herr ...?!"
+,,wenn sie bitte noch so nett sind und mir zur sicherheit ihr geburtsdatum nennen, welches bei uns im system hinterlegt ist?! ... vielen dank!"
+,,wir mssen aus datenschutzgrnden sichergehen, dass wir auch wirklich nur mit unseren kunden sprechen. dafr haben sie doch sicherlich verstndnis?"
+3. b e d a r f s a n a l y s e / q u a l i f i z i e r u n g
+,,frau / herr ... ich habe mir die unterlagen zu ihrer finanzierung / ihrem leasing angesehen und dabei ist mir aufgefallen, dass alle voraussetzungen erfllt sind, um fr ihr fahrzeug, den renault / nissan < modell >, unseren schutz securplus zu aktivieren." ... ,,bevor ich ihnen den schutz vorstelle, habe ich noch eine frage: haben sie denn fr dieses fahrzeug eine teil- oder eine vollkasko abgeschlossen?" ... bei vollkasko: ,,wie hoch ist denn ihre selbstbeteiligung bei der vollkasko?" ... sehr schn, frau / herr ..., dadurch besteht fr sie jetzt die mglichkeit, diesen versicherungsschutz sinnvoll zu ergnzen. exklusiv fr renault-kunden / nissan-kunden bieten wir nmlich den sogenannten securplus-schutz an. sagt ihnen das etwas?"
+kunde verneint / kunde bejaht und zeigt interesse -> produktvorstellung.
+seite 2 von 7
+confidential c
+4. p r o d u k t v o r s t e l l u n g s p ,,mal angenommen, sie verursachen an ihrem fahrzeug einen kleineren aber rgerlichen schaden. also einen typischen parkplatzunfall, bei dem sie z.b. im parkhaus eine betonsule touchieren. in der werkstatt kommen da ganz schnell kosten in hhe von mehreren hundert euro zusammen.
+wie regeln sie solche flle derzeit, sprich wer kommt in diesem beispiel fr die reparaturkosten an ihrem fahrzeug auf?" ... mgliche kundenantworten:
+1. schaden wird ber die vollkasko des kunden abgewickelt. kunde trgt selbstbeteiligung. in den meisten fllen hochstufung der schadensfreiheitsklasse in der vollkasko.
+2. kunde hat zwar eine vollkasko, nimmt diese aber nicht in anspruch, da er die kosten der selbstbeteiligung nicht tragen mchte und eine hochstufung in der schadensfreiheitsklasse vermeiden mchte.
+3. kunde hat nur eine teilkasko / haftpflicht. kunde kommt selbst fr den schaden auf (oder lsst ihn nicht reparieren...)
+,,sehen sie, frau / herr ..., und genau in diesen fllen profitieren sie von der leistung der securplus. sie minimiert die kosten, die im falle eines selbstverschuldeten unfalls am eigenen fahrzeug entstehen.
+ich gebe ihnen kurz ein beispiel hierzu: angenommen sie haben einen selbstverschuldeten parkschaden an ihrem fahrzeug verursacht. die reparaturkosten in der werkstatt belaufen sich auf 1.400."
+fortfahren je nach o.g. kundenantwort: 1. ,,ihre vollkasko besttigt die leistungspflicht und bernimmt die kosten abzglich ihrer selbstbeteiligung.
+securplus bernimmt fr sie die kosten fr ihre selbstbeteiligung bis zu einer hhe von 1.000. das bedeutet, dass sie selbst keinen einzigen euro fr die reparatur des schadens ausgeben mssen. und das mit mtl. berschaubaren raten  also keine unvorhersehbaren belastungen."
+2. ,,obwohl ihre vollkasko den schaden bernehmen wrde, entscheiden sie sich dazu die kosten selbst zu bernehmen, damit sie in ihrer schadenfreiheitsklasse nicht hochgestuft werden. in diesem fall bernimmt die securplus die reparaturkosten bis zu einer hhe von 1.000 in einer renault- / nissan-vertragswerkstatt. das bedeutet fr sie, dass sie ihren eigenanteil auf 400 reduzieren und gleichzeitig behalten sie ihre schadensfreiheitsklasse. und das mit mtl. berschaubaren raten  also keine unvorhersehbaren belastungen."
+seite 3 von 7
+confidential c
+3. ,,in dem fall mssten sie fr die kompletten 1.400 reparaturkosten aufkommen. die securplus wrde ihnen dabei erheblich helfen, da sie die reparaturkosten bis zu einer hhe von 1.000 in einer renault- / nissan-fachwerkstatt bernimmt. das bedeutet fr sie, dass sie ihren eigenanteil auf 400 reduzieren knnen, obwohl sie keine vollkasko-versicherung haben. securplus ist somit fr sie eine ,,mini-kasko". und das mit mtl. berschaubaren raten  also keine unvorhersehbaren belastungen."
+in allen 3 fllen anschlieend:
+,,securplus ist fr sie die perfekte absicherung bei kleinen missgeschicken. sie greift bei selbstverschuldeten unfllen am eigenen fahrzeug inklusive parkschden oder unfllen mit laternen, leitplanken, bumen, etc. lediglich wildschden, naturgewalten, diebstahl und glasschden sind ausgeschlossen, da diese flle klassisch ber eine teilkasko abgesichert sind.
+ die absicherung ist europaweit gltig.  smtliche fahrzeuge bis max. 3,5 t zul. gesamtgewicht sind versicherbar.  versicherungsschutz besteht fr jede person mit gltiger fahrerlaubnis, unabhngig vom alter des fahrers
+und vllig unabhngig davon ob das fahrzeug privat oder gewerblich genutzt wird.  auch die sf-klasse oder die jhrliche kilometer-laufleistung sind nicht relevant.  sogar zwei schadensflle pro jahr sind abgesichert. (kein hinweis darauf aktiv, auer kunde fragt nach!)
+je nachdem welche leistungssumme sie absichern mchten, stehen drei verschiedene securplus-varianten zur auswahl: die 300, 500 oder 1.000 variante und im schadensfall leistet die absicherung bei reparatur in einer renault- / nissan-fachwerkstatt genau diese vorab definierte summe.
+bei ihnen kmen lediglich 8,99 / 11,99 / 18,99 pro monat zur rate hinzu.
+die laufzeit entspricht dabei der restlaufzeit ihres hauptvertrages. bei vertrgen mit einer laufzeit von mehr als 36 monaten knnen sie diesen vertrag vorzeitig erstmals zum ablauf von 36 monaten mit einer kndigungsfrist von 3 monaten kndigen.
+kunde mchte sp -> einleitung verkauf sp
+kunde reagiert ablehnend / zgert -> einwandbehandlung
+seite 4 von 7
+confidential c
+5. e i n w a n d b e h a n d l u n g s p zu teuer! ,,das finde ich gut, dass sie das so offen sagen, frau / herr ... ! aber nun stellen sie sich mal vor, sie verursachen tatschlich einen selbstverschuldeten unfall. dann knnen sie so gesehen fr den wert einer autowsche ihre hohen (reparatur-)kosten reduzieren."
+kein interesse / nicht ntig ,,das finde ich gut, dass sie das so offen sagen, frau / herr ... ! darf ich fragen, weshalb sie kein interesse haben?" ... ,,das klingt plausibel, aber auch kleine bagatellschden wie der typische parkplatzunfall knnen groe kosten in der werkstatt auslsen. geschweige denn die kosten fr die selbstbeteiligung bei der vollkasko oder ihre hochstufung in der schadensfreiheitsklasse. gerade solche nachteile fr sie als unseren kunden wollen wir vermeiden und empfehlen ihnen genau deshalb die securplus. die bernimmt fr einen geringen monatlichen beitrag (beispiel autowsche) im fall der flle eine weitaus hhere finanzielle belastung, die durch einen unfall an ihrem fahrzeug entsteht.
+infomaterial gerne knnen sie sich in das thema auch erstmal einlesen. ich empfehle ihnen dazu unsere website, auf der alle infos bersichtlich zusammengefasst sind: www.renault-bank.de / www.nissan-bank.de
+wenn sie die papierform bevorzugen, dann schlage ich folgende lsung vor: wenn wir die securplus hier elektronisch am telefon aktivieren, erhalten sie in den nchsten tagen direkt per post smtliche unterlagen dazu. und sofern ihnen die absicherung doch nicht zusagt, knnen sie die securplus ganz gemtlich innerhalb einer frist von 30 tagen ab datum der versicherungsbesttigung widerrufen.
+ansonsten stehe ich hier und jetzt natrlich auch fr alle fragen gerne bereit."
+mit (ehe)-partner absprechen ,,kein problem, nehmen sie sich gerne zeit, das in ruhe zu berlegen. ich wrde vorschlagen wir vereinbaren einfach einen rckruftermin und dann sprechen wir nochmal miteinander?! ... wann passt es bei ihnen denn zeitlich am besten?"
+seite 5 von 7
+confidential c
+6. einleitung verkauf sp
+,,das schne und praktische an der ganzen sache ist, dass wir die aktivierung der securplus fr sie sogar ganz unbrokratisch am telefon machen knnen. nach der aufnahme des elektronischen anmeldeformulars erhalten sie dann umgehend die absicherungs-besttigung schwarz-auf-wei per post nach hause. und - vorausgesetzt natrlich, der fllige erstbeitrag zur securplus wird fristgem eingelst - genieen sie sogar bereits ab heute den vorlufigen versicherungsschutz!"
+bitte beachten
+falls aufzeichnungseinverstndnis bereits eingeholt:
+falls aufzeichnungseinverstndnis anfangs abgelehnt, jetzt zwingend einzuholen
+anschlieend fr beide flle
+7. v e r k a u f s p ,,so, frau / herr ..., sie haben ja der aufzeichnung bereits zugestimmt, sodass wir mit der aufnahme des elektronischen anmeldeformulars direkt anfangen knnen." ,,so, frau / herr ..., dann fangen wir jetzt mit der aufnahme des elektronischen anmeldeformulars an. bitte besttigen sie zunchst, dass sie mit der aufnahme einverstanden sind, durch ein deutliches ,,ja"."
+,,dann fasse ich zunchst ihre daten zusammen:
+ sie sind frau / herr < vorname nachname >  ihr geburtsdatum ist xx.xx.xxxx  sie selbst sind der kredit- / leasingnehmer?  ihre adresse lautet ...?!
+dann wiederhole ich noch einmal:
+sie bekommen die vertragsunterlagen und die informationspflichten zur versicherungsvermittlung zugesandt.
+sie erhalten unsere securplus 300 / 500 / 1000 fr eine monatliche prmie whrend der kredit- / leasinglaufzeit i.h.v. 8,99 / 11,99 / 18,99 pro monat. diesen betrag ziehen wir zusammen mit der finanzierungsrate / leasingrate fr ihr fahrzeug ein.
+der schutz sichert ihr fahrzeug, den renault / nissan < modell > mit dem amtlichen kennzeichen ... im falle eines selbstverschuldeten unfalls ab. das fahrzeug hat ein zulssiges gesamtgewicht unter 3,5 tonnen und wird nicht als mietfahrzeug, taxi oder kurierdienst-fahrzeug eingesetzt.
+seite 6 von 7
+confidential c
+sie erhalten im leistungsfall entweder eine kostenbernahme ihrer selbstbeteiligung bei der vollkasko in einer hhe von bis zu 300 / 500 / 1000  bzw. eine bernahme der werkstattreparaturkosten in einer hhe von bis zu 300 / 500 / 1000  bei einer renault- / nissan- vertragswerkstatt. entscheiden sie sich fr die reparatur in einer freien werkstatt so bernimmt securplus die werkstattreparaturkosten in hhe von bis zu 150 / 250 / 500 .
+unter der voraussetzung, dass der fllige erstbeitrag zur securplus fristgem eingelst wird, genieen sie den vorlufigen versicherungsschutz bereits ab dem heutigen tag und der schutz endet automatisch mit ablauf des geplanten finanzierungs- / leasingvertrages.
+in der versicherungsbesttigung, die sie in den nchsten tagen erhalten, finden sie auch die genauen bedingungen, sowie schriftliche informationen zum vermittler und zum versicherer.
+abschlieend noch zwei kurze bestimmungen zum widerrufsrecht und zur einzugsermchtigung.
+widerrufsrecht die securplus kann innerhalb einer frist von 30 tagen ab datum der versicherungsbesttigung widerrufen werden. die nheren einzelheiten zum widerruf enthlt die versicherungsbesttigung.
+einzugsermchtigung auerdem ermchtigen sie hiermit die renault-bank / nissan-bank widerruflich, die im zusammenhang mit dem vertrag zu entrichtenden prmien bei flligkeit mittels lastschrift von dem uns bekannten konto einzuziehen.
+bitte besttigen sie den wunsch, die securplus fr sie - wie besprochen - zu aktivieren, mit einem deutlichen ja."
+8. v e r a b s c h i e d u n g ,,frau / herr ..., haben sie noch irgendwelche fragen, die ich ihnen beantworten darf? ... schn! dann bedanke ich mich fr das sehr angenehme gesprch und wnsche ihnen allzeit gute fahrt. auf wiederhren!"
+seite 7 von 7
+confidential c
+gesprchsleitfaden k2 | outbound | sp | version vom 08.07.2019
+fahrzeug-hersteller...........................................renault / nissan kunden-gruppe.....................................................finanzierung / leasing produkte ................................................................ securplus kampagnen-infos: sie rufen kunden der renault- bzw. nissan-bank an, die eine finanzierung bzw. leasing fr ein auto abgeschlossen haben. dabei wurde das zusatzprodukt ,,securplus" bei vertragsabschluss nicht mit abgeschlossen. ihre aufgabe ist es, die kunden davon zu berzeugen, diesen zusatz mit in die finanzierung / das leasing aufzunehmen. legende:
+textbaustein (zwingend und wortwrtlich so zu kommunizieren) textbaustein (vom agenten bei bedarf leicht modulierbar) textvariable (je nach kunde) voicefile-prozess kunden-reaktion
+seite 1 von 7
+confidential c
+hiermit fortfahren:
+bitte beachten
+verhltnis k1 <-> k2/dritter abklren nur bei bevollmchtigung fortfahren!
+1. begrung ,,darf ich fragen, in welchem verhltnis sie zu k1 ... stehen?" ,,sind sie bevollmchtigt ber die finanzierungsangelegenheiten von k1 ... zu sprechen?"
+bitte beachten
+2. g r u n d d e s a n r u f s
+,,ja" oder ,,nein" zwingend einzuholen. ,,vorab noch ein hinweis: aus qualittsgrnden zeichnen wir die gesprche auf. ich nehme an, das ist in ordnung fr sie?"
+kunde verneint: aufzeichnung komplett stoppen.
+besttigung der korrekten datenzusammenfassung einholen
+kunde bejaht: aufzeichnung inkl. kundenstimme starten und: ,,vielen dank. ich spreche mit frau / herrn... sie sind der / die < verhltnisgrad > von k1 und dazu bevollmchtigt ber seine / ihre finanzierungsangelegenheiten zu sprechen und waren mit der aufnahme einverstanden?"
+3. b e d a r f s a n a l y s e / q u a l i f i z i e r u n g
+,,frau / herr ... ich habe mir die unterlagen zu k1 finanzierung / leasing angesehen und dabei ist mir aufgefallen, dass alle voraussetzungen erfllt sind, um fr sein / ihr fahrzeug, den renault / nissan < modell >, unseren schutz securplus zu aktivieren." ... ,,bevor ich ihnen den schutz vorstelle, habe ich noch eine frage: hat k1 denn fr dieses fahrzeug eine teil- oder eine vollkasko abgeschlossen?" ... bei vollkasko: ,,wie hoch ist denn die selbstbeteiligung bei der vollkasko?" ... sehr schn, frau / herr ..., dadurch besteht fr sie jetzt die mglichkeit, diesen versicherungsschutz sinnvoll zu ergnzen. exklusiv fr renault-kunden / nissan-kunden bieten wir nmlich den sogenannten securplus-schutz an. sagt ihnen das etwas?"
+kunde verneint / kunde bejaht und zeigt interesse -> produktvorstellung.
+seite 2 von 7
+confidential c
+4. p r o d u k t v o r s t e l l u n g s p ,,mal angenommen, k1 verursacht an dem fahrzeug einen kleineren aber rgerlichen schaden. also einen typischen parkplatzunfall, bei dem er/sie z.b. im parkhaus eine betonsule touchiert. in der werkstatt kommen da ganz schnell kosten in hhe von mehreren hundert euro zusammen.
+wie regeln sie solche flle derzeit, sprich wer kommt in diesem beispiel fr die reparaturkosten an ihrem fahrzeug auf?" ... mgliche kundenantworten:
+1. schaden wird ber die vollkasko des kunden abgewickelt. kunde trgt selbstbeteiligung. in den meisten fllen hochstufung der schadensfreiheitsklasse in der vollkasko.
+2. kunde hat zwar eine vollkasko, nimmt diese aber nicht in anspruch, da er die kosten der selbstbeteiligung nicht tragen mchte und eine hochstufung in der schadensfreiheitsklasse vermeiden mchte.
+3. kunde hat nur eine teilkasko / haftpflicht. kunde kommt selbst fr den schaden auf (oder lsst ihn nicht reparieren...)
+,,sehen sie, frau / herr ..., und genau in diesen fllen profitieren sie von der leistung der securplus. sie minimiert die kosten, die im falle eines selbstverschuldeten unfalls am eigenen fahrzeug entstehen.
+ich gebe ihnen kurz ein beispiel hierzu: angenommen k1 hat einen selbstverschuldeten parkschaden an seinem / ihrem fahrzeug verursacht. die reparaturkosten in der werkstatt belaufen sich auf 1.400."
+fortfahren je nach o.g. kundenantwort: 1. ,,seine / ihre vollkasko besttigt die leistungspflicht und bernimmt die kosten abzglich ihrer selbstbeteiligung.
+securplus bernimmt fr ihn / sie die kosten fr die selbstbeteiligung bis zu einer hhe von 1.000. das bedeutet, dass k1 selbst keinen einzigen euro fr die reparatur des schadens ausgeben muss. und das mit mtl. berschaubaren raten  also keine unvorhersehbaren belastungen."
+2. ,,obwohl die vollkasko den schaden bernehmen wrde, entscheidet k1 sich dazu die kosten selbst zu bernehmen, damit er / sie in seiner / ihrer schadenfreiheitsklasse nicht hochgestuft wird. in diesem fall bernimmt die securplus die reparaturkosten bis zu einer hhe von 1.000 in einer renault- / nissan-vertragswerkstatt. das bedeutet fr k1, dass er / sie den eigenanteil auf 400 reduziert und gleichzeitig seine / ihre schadensfreiheitsklasse behlt. und das mit mtl. berschaubaren raten  also keine unvorhersehbaren belastungen."
+seite 3 von 7
+confidential c
+3. ,,in dem fall msste k1fr die kompletten 1.400 reparaturkosten aufkommen. die securplus wrde ihm / ihr dabei erheblich helfen, da sie die reparaturkosten bis zu einer hhe von 1.000 in einer renault- / nissan-fachwerkstatt bernimmt. das bedeutet fr k1, dass er / sie den eigenanteil auf 400 reduzieren kann, obwohl er / sie keine vollkasko-versicherung hat. securplus ist somit fr k1 eine ,,mini-kasko". und das mit mtl. berschaubaren raten  also keine unvorhersehbaren belastungen."
+in allen 3 fllen anschlieend:
+,,securplus ist fr k1 die perfekte absicherung bei kleinen missgeschicken. sie greift bei selbstverschuldeten unfllen am eigenen fahrzeug inklusive parkschden oder unfllen mit laternen, leitplanken, bumen, etc. lediglich wildschden, naturgewalten, diebstahl und glasschden sind ausgeschlossen, da diese flle klassisch ber eine teilkasko abgesichert sind.
+ die absicherung ist europaweit gltig.  smtliche fahrzeuge bis max. 3,5 t zul. gesamtgewicht sind versicherbar.  versicherungsschutz besteht fr jede person mit gltiger fahrerlaubnis, unabhngig vom alter des fahrers
+und vllig unabhngig davon ob das fahrzeug privat oder gewerblich genutzt wird.  auch die sf-klasse oder die jhrliche kilometer-laufleistung sind nicht relevant.  sogar zwei schadensflle pro jahr sind abgesichert. (kein hinweis darauf aktiv, auer kunde fragt nach!)
+je nachdem welche leistungssumme sie absichern mchten, stehen drei verschiedene securplus-varianten zur auswahl: die 300, 500 oder 1.000 variante und im schadensfall leistet die absicherung bei reparatur in einer renault- / nissan-fachwerkstatt genau diese vorab definierte summe.
+bei k1 kmen lediglich 8,99 / 11,99 / 18,99 pro monat zur rate hinzu.
+die laufzeit entspricht dabei der restlaufzeit seines / ihres hauptvertrages. bei vertrgen mit einer laufzeit von mehr als 36 monaten kann k1 diesen vertrag vorzeitig erstmals zum ablauf von 36 monaten mit einer kndigungsfrist von 3 monaten kndigen.
+kunde mchte sp -> einleitung verkauf sp
+kunde reagiert ablehnend / zgert -> einwandbehandlung
+seite 4 von 7
+confidential c
+5. e i n w a n d b e h a n d l u n g s p zu teuer! ,,das finde ich gut, dass sie das so offen sagen, frau / herr ... ! aber nun stellen sie sich mal vor, k1 verursacht tatschlich einen selbstverschuldeten unfall. dann knnen er/sie so gesehen fr den wert einer autowsche die hohen (reparatur-)kosten reduzieren."
+kein interesse / nicht ntig ,,das finde ich gut, dass sie das so offen sagen, frau / herr ... ! darf ich fragen, weshalb sie kein interesse haben?" ... ,,das klingt plausibel, aber auch kleine bagatellschden wie der typische parkplatzunfall knnen groe kosten in der werkstatt auslsen. geschweige denn die kosten fr die selbstbeteiligung bei der vollkasko oder ihre hochstufung in der schadensfreiheitsklasse. gerade solche nachteile fr k1 als unseren kunden wollen wir vermeiden und empfehlen ihnen genau deshalb die securplus. die bernimmt fr einen geringen monatlichen beitrag (beispiel autowsche) im fall der flle eine weitaus hhere finanzielle belastung, die durch einen unfall an k1 fahrzeug entsteht.
+infomaterial gerne knnen sie sich in das thema auch erstmal einlesen. ich empfehle ihnen dazu unsere website, auf der alle infos bersichtlich zusammengefasst sind: www.renault-bank.de / www.nissan-bank.de
+wenn sie die papierform bevorzugen, dann schlage ich folgende lsung vor: wenn wir die securplus hier elektronisch am telefon aktivieren, erhlt k1 in den nchsten tagen direkt per post smtliche unterlagen dazu. und sofern ihm / ihr die absicherung doch nicht zusagt, kann k1 die securplus ganz gemtlich innerhalb einer frist von 30 tagen ab datum der versicherungsbesttigung widerrufen.
+ansonsten stehe ich hier und jetzt natrlich auch fr alle fragen gerne bereit."
+6. einleitung verkauf sp ,,das schne und praktische an der ganzen sache ist, dass wir die aktivierung der securplus fr sie sogar ganz unbrokratisch am telefon erledigen knnen. nach der aufnahme des elektronischen anmeldeformulars erhlt k1 dann umgehend die absicherungs-besttigung schwarz-auf-wei per post nach hause. und - vorausgesetzt natrlich, der fllige erstbeitrag zur securplus wird fristgem eingelst  geniet k1 sogar bereits ab heute den vorlufigen versicherungsschutz!"
+seite 5 von 7
+confidential c
+bitte beachten
+falls aufzeichnungseinverstndnis bereits eingeholt:
+falls aufzeichnungseinverstndnis anfangs abgelehnt, jetzt zwingend einzuholen
+anschlieend fr beide flle
+7. v e r k a u f s p ,,so, frau / herr ..., sie haben ja der aufzeichnung bereits zugestimmt, sodass wir mit der aufnahme des elektronischen anmeldeformulars direkt anfangen knnen." ,,so, frau / herr ..., dann fangen wir jetzt mit der aufnahme des elektronischen anmeldeformulars an. bitte besttigen sie zunchst, dass sie mit der aufnahme einverstanden sind, durch ein deutliches ,,ja"."
+,,dann fasse ich nochmal zusammen:
+ ich spreche mit frau / herr < vorname nachname >  sie sind der / die < verhltnisgrad > von k1 und von ihm / ihr bevollmchtigt, die sp-absicherung abzuschlieen?  sie sind auch bereits volljhrig nehme ich an?
+dann wiederhole ich noch einmal:
+k1 bekommt die vertragsunterlagen und die informationspflichten zur versicherungsvermittlung zugesandt.
+er / sie erhlt unsere securplus 300 / 500 / 1000 fr eine monatliche prmie whrend der kredit- / leasinglaufzeit i.h.v. 8,99 / 11,99 / 18,99 pro monat. diesen betrag ziehen wir zusammen mit der finanzierungsrate / leasingrate fr sein / ihr fahrzeug ein.
+der schutz sichert das fahrzeug, den renault / nissan < modell > mit dem amtlichen kennzeichen ... im falle eines selbstverschuldeten unfalls ab. das fahrzeug hat ein zulssiges gesamtgewicht unter 3,5 tonnen und wird nicht als mietfahrzeug, taxi oder kurierdienst-fahrzeug eingesetzt.
+k1 erhlt im leistungsfall entweder eine kostenbernahme seiner / ihrer selbstbeteiligung bei der vollkasko in einer hhe von bis zu 300 / 500 / 1000  bzw. eine bernahme der werkstattreparaturkosten in einer hhe von bis zu 300 / 500 / 1000  bei einer renault- / nissan- vertragswerkstatt. entscheidet k1 sich fr die reparatur in einer freien werkstatt so bernimmt securplus die werkstattreparaturkosten in hhe von bis zu 150 / 250 / 500 .
+unter der voraussetzung, dass der fllige erstbeitrag zur securplus fristgem eingelst wird, geniet k1 den vorlufigen versicherungsschutz bereits ab dem heutigen tag und der schutz endet automatisch mit ablauf des geplanten finanzierungs- / leasingvertrages.
+seite 6 von 7
+confidential c
+in der versicherungsbesttigung, die k1 in den nchsten tagen erhlt, findet er / sie auch die genauen bedingungen, sowie schriftliche informationen zum vermittler und zum versicherer.
+abschlieend noch zwei kurze bestimmungen zum widerrufsrecht und zur einzugsermchtigung. widerrufsrecht die securplus kann innerhalb einer frist von 30 tagen ab datum der versicherungsbesttigung widerrufen werden. die nheren einzelheiten zum widerruf enthlt die versicherungsbesttigung. einzugsermchtigung auerdem besitzen sie die vollmacht, hiermit die renault-bank / nissan-bank widerruflich zu ermchtigen, die im zusammenhang mit dem vertrag zu entrichtenden prmien bei flligkeit mittels lastschrift von dem uns bekannten konto einzuziehen. bitte besttigen sie den wunsch, die securplus fr k1 - wie besprochen - zu aktivieren, mit einem deutlichen ja."
+8. v e r a b s c h i e d u n g ,,frau / herr ..., haben sie noch irgendwelche fragen, die ich ihnen beantworten darf? ... schn! dann bedanke ich mich fr das sehr angenehme gesprch und wnsche ihnen allzeit gute fahrt. auf wiederhren!"
+seite 7 von 7
+confidential c
+produktinformationen zur securplus-versicherung mit den nachfolgenden informationen mchten wir ihnen einen ersten berblick ber die ihnen angebotene securplus-versicherung geben. diese informationen sind jedoch nicht abschlieend. der gesamte vertragsinhalt ergibt sich aus dem antrag und den allgemeinen bedingungen der securplus-versicherung. mageblich fr den versicherungsschutz sind die dort getroffenen regelungen. wir empfehlen ihnen daher, die gesamten vertragsbedingungen sorgfltig zu lesen.
+1. welchen versicherungsvertrag bieten wir ihnen an? es gelten die allgemeinen versicherungsbedingungen zur securplus-versicherung; stand 01.09.2018.
+2. welche risiken sind versichert, welche sind nicht versichert? die securplus-versicherung deckt einen teilschaden oder einen totalschaden an ihrem fahrzeug, der aufgrund eines selbstverschuldeten verkehrsunfalls entstanden ist. versicherbar sind alle in deutschland zugelassenen kraftfahrzeuge mit einem zulssigen gesamtgewicht von bis zu 3,5t. nicht versicherbar sind mietfahrzeuge, taxis und kurierfahrzeuge. die inanspruchnahme der versicherung fr schden ist auf 2-mal pro versicherungsjahr begrenzt. einzelheiten entnehmen sie bitte den  2,3 und 6 des abschnittes a der allgemeinen versicherungsbedingungen zur securplus-versicherung.
+3. welche leistung erhalten sie bei der inanspruchnahme der securplus-versicherung?
+3.1 fahrzeug ist vollkaskoversichert
+bei inanspruchnahme der vollkaskoversicherung erstattet ihnen die securplus-versicherung, bei vorliegen eines versicherten ereignisses, den von der
+vollkaskoversicherung belasteten selbstbehalt bis maximal zu einer hhe des in der tabelle unter 3.4, spalte a, genannten betrages bei reparatur in einer
+vertragswerkstatt von renault/dacia oder maximal bis zu einer hhe des in der tabelle unter 3.4, spalte b, genannten betrages bei reparatur in einer nicht
+zu renault/dacia gehrenden vertragswerkstatt.
+fr den fall, dass die hhe des schadens unterhalb des mit der vollkaskoversicherung vereinbarten selbstbehaltes liegt, erhalten sie pro schadenereignis
+eine entschdigungsleistung bis zu einer hhe des in der tabelle unter 3.4, spalte a, genannten betrages inkl. der gesetzlichen mehrwertsteuer bei
+reparatur des unfallschadens in einer vertragswerkstatt von renault/dacia und bis zu einer hhe des in der tabelle unter 3.4, spalte b, genannten betrages
+inkl. der gesetzlichen mehrwertsteuer bei reparatur in einer nicht zu renault/dacia gehrenden vertragswerkstatt, maximal jedoch die hhe des vereinbartes
+selbstbehaltes.
+3.2 fahrzeug ist nicht vollkaskoversichert
+die securplus-versicherung erstattet ihnen eine entschdigung bis zu einer hhe des in der tabelle unter 3.4, spalte a, genannten betrages inkl. der
+gesetzlichen mehrwertsteuer bei reparatur des unfallschadens in einer vertragswerkstatt von renault/dacia und von bis zu einer hhe des in der tabelle
+unter 3.4, spalte b, genannten betrages inkl. der gesetzlichen mehrwertsteuer pro schadenereignis bei reparatur in einer nicht zu renault/dacia gehrenden
+vertragswerkstatt.
+3.3 totalschaden
+im falle eines totalschadens an ihrem fahrzeug aufgrund eines versicherten ereignisses erhalten sie eine entschdigung in hhe des in der tabelle unter
+3.4, spalte a, genannten betrages.
+3.4 maximale entschdigung (die maximale entschdigung richtet sich nach dem von der versicherten person gewhlten produkt.)
+produkt
+a*
+b*
+prmie/monat
+securplus 300
+300 
+150 
+8,99 
+securplus 500
+500 
+250 
+11,99 
+securplus 1.000
+1.000 
+500 
+18,99 
+(*) a+b sind in im punkt 3.1 definiert
+4. wie hoch ist der beitrag, wann mssen sie ihn bezahlen und was passiert, wenn sie ihn nicht oder versptet bezahlen? die monatliche prmie fr die securplus-versicherung knnen sie aus der oben genannten tabelle 3.4. entnehmen. die angegebene prmie ist inklusiv der gesetzlichen versicherungssteuer. bitte bezahlen sie den ersten betrag unverzglich nach vertragsabschluss, um sofortigen versicherungsschutz zu genieen. anderenfalls knnen wir bei verspteter zahlung vom versicherungsvertrag zurcktreten oder sind bei eintreten des versicherungsfalles leistungsfrei. falls sie der rci banque s.a. niederlassung deutschland ein sepa-mandat erteilt haben, sorgen sie bitte fr ausreichende deckung auf ihrem konto. einzelheiten entnehmen sie bitte den  3, 4 und 5 des abschnitts b der allgemeinen versicherungsbedingungen zur securplus-versicherung.
+5. welche leistungen sind ausgeschlossen? nicht alle einzelflle sind im versicherungsschutz eingeschlossen. um den beitrag kalkulierbar zu halten, kommt in manchen fllen ein leistungsausschluss in betracht. so z. b. bei vorstzlich herbeigefhrten schden oder bei schden, die durch einen wildunfall (versicherbar mit einer teilkaskoversicherung) verursacht wurden. die einzelnen ausschlsse entnehmen sie bitte dem  6 des abschnittes a der allgemeinen versicherungsbedingungen zur securplus-versicherung.
+6. welche pflichten haben sie bei vertragsschluss und welche folgen knnen verletzungen dieser pflichten haben? bitte machen sie im antrag wahrheitsgeme und vollstndige angaben. bei unrichtigen angaben besteht die gefahr, dass sie ihren versicherungsschutz verlieren.
+7. welche pflichten haben sie whrend der vertragslaufzeit und welche folgen knnen verletzungen dieser pflichten haben? welche pflichten sie bei gebrauch ihres fahrzeuges haben, ergibt sich aus den  3,4 und 6 des abschnitts b der allgemeinen versicherungsbedingungen zur securplus-versicherung. beispielsweise drfen sie nur mit der erforderlichen fahrerlaubnis und einem verkehrssicherem fahrzeug und nicht unter einfluss von alkohol und anderen rauschmitteln fahren. die verletzung einer dieser pflichten kann schwerwiegende konsequenzen fr sie haben, unter anderem der verlust des versicherungsschutzes.
+8. welche pflichten haben sie im schadenfall und welche folgen knnen verletzungen dieser pflichten haben? im schadenfall mssen sie alles erforderliche tun, um das schadenereignis aufzuklren. das bedeutet insbesondere, den schadenfall unverzglich und wahrheitsgem anzuzeigen. auch sind sie verpflichtet, nach mglichkeit fr die minderung des schadens zu sorgen. die verletzung einer dieser pflichten kann zum verlust des versicherungsschutzes fhren. einzelheiten entnehmen sie bitte dem  7 des abschnitts a und  6 des abschnittes b der allgemeinen versicherungsbedingungen zur securplusversicherung.
+9. beginn und ende des versicherungsschutzes der versicherungsschutz beginnt mit erhalt der durch die rci banque s.a. gesendeten versicherungsbesttigung. unter der voraussetzung, dass sie den ersten beitrag termingem zahlen, genieen sie vorlufigen versicherungsschutz ab dem zeitpunkt der bernahme des versicherten fahrzeugs durch die versicherte person. voraussetzung hierfr ist, dass die versicherte person fr das jeweilige fahrzeug versicherungsschutz beantragt. die dauer des versicherungsvertrages richtet sich nach der dauer ihres finanzierungs- oder leasingvertrages bei der rci banque deutschland (jagenbergstr. 1, 41468 neuss), jedoch maximal 60 monate. falls kein finanzierungs- oder leasingvertrag bei der rci banque deutschland vorhanden sein sollte, knnen sie die laufzeit zwischen 12 bis 60 monaten frei whlen. bei vertrgen mit einer laufzeit von 48 oder 60 monaten haben sie in jedem fall die mglichkeit, diesen vertrag vorzeitig erstmals zum ablauf von 36 monaten mit einer kndigungsfrist von 3 monaten zu kndigen. der versicherungsvertrag endet zum ablauf der vereinbarten laufzeit automatisch, sptestens zum ablauf von 60 monaten.
+10. weitere mglichkeiten der vertragsbeendigung bei veruerung ihres fahrzeuges oder im falle eines totalschadens besteht fr sie die mglichkeit, den vertrag vorzeitig zu beenden. einzelheiten entnehmen sie bitte dem  5 des abschnitts b der allgemeinen versicherungsbedingungen zur securplus-versicherung.
+mdv1631-04-0918
+allgemeine versicherungsbedingungen zur securplus-versicherung
+stand 01.09.2018
+definitionen
+versicherer: mma iard assurance mutuelles versicherungsgesellschaft auf gegenseitigkeit mit festen beitrgen, handelsregister le mans 775 652 126 und mma iard s.a. aktiengesellschaft mit einem kapital von 537.052.368 , handelsregister le mans 440048882, 14 boulevard marie et alexandre oyon, 72030 le mans cdex 9 (frankreich), vertreten durch herv frapsauce gruppenversicherungsnehmerin: rci banque s.a. niederlassung deutschland, jagenbergstr. 1, 41468 neuss. generaldirektor: pierre-yves beaufils versicherungsvermittler: rci versicherungs-service gmbh, jagenbergstr. 1, 41468 neuss, vertreten durch ihren geschftsfhrer pierre-yves beaufils schadensstelle/assecuradeur der mma iard assurance mutuelles und mma iard s.a. in deutschland: maxxogon mobil assecuradeurgesellschaft mbh, holzstrae 2, 40221 dsseldorf, vertreten durch ihre geschftsfhrer ralf schneider, franz rudolf golling, andreas berger.
+abschnitt a
+diese allgemeinen bedingungen sind bestandteil des gruppenversicherungsvertrages.
+ 1 versichertes ereignis die securplus-versicherung deckt einen teilschaden oder einen totalschaden am fahrzeug der versicherten person, welcher aufgrund eines vom fahrzeugfhrer verschuldeten verkehrsunfalles (jedes pltzliche und ungewollte mit dem ffentlichem straenverkehr und seinen typischen gefahren urschlich zusammenhngendes ereignis, bei dem ein sachschaden entstanden ist) entstanden ist.
+ 2 versicherbare und nicht versicherbare fahrzeuge 2.1 versicherbare fahrzeuge versicherbar sind alle in deutschland zugelassenen kraftfahrzeuge mit einem zulssigen gesamtgewicht von bis zu 3,5 t.
+2.2 nicht versicherbare fahrzeuge nicht versicherbar sind fahrzeuge mit einem zulssigen gesamtgewicht ber 3,5 t sowie mietfahrzeuge, taxis und kurierfahrzeuge.
+ 3 umfang der versicherung der versicherungsumfang richtet sich nach dem von der versicherten person gewhlten produkt unter 3.4 3.1 fr das zu versichernde fahrzeug besteht eine vollkaskoversicherung bei inanspruchnahme der vollkaskoversicherung erstattet die securplus-versicherung, bei vorliegen eines versicherten ereignisses, den von der vollkaskoversicherung des versicherten fahrzeugs belasteten selbstbehalt bis maximal zu einer hhe des in der tabelle unter 3.4, spalte a, genannten betrages bei reparatur in einer vertragswerkstatt von renault/dacia oder bis maximal zu einer hhe des in der tabelle unter 3.4, spalte b, genannten betrages bei reparatur in einer nicht zu renault/dacia gehrenden vertragswerkstatt. fr den fall, dass die hhe des schadens unterhalb des mit der vollkaskoversicherung vereinbarten selbstbehaltes des versicherten fahrzeugs liegt, erhlt die versicherte person eine entschdigungsleistung bis zu einer hhe des in der tabelle unter 3.4, spalte a, genannten betrages inkl. der gesetzlichen mehrwertsteuer bei reparatur des unfallschadens in einer vertragswerkstatt von renault/dacia und bis zu einer hhe des in der tabelle unter 3.4, spalte b, genannten betrages inkl. der gesetzlichen mehrwertsteuer pro schadenereignis bei reparatur in einer nicht zu renault/dacia gehrenden vertragswerkstatt, maximal jedoch die hhe des vereinbarten selbstbehaltes.
+3.2 fr das zu versichernde fahrzeug besteht keine vollkaskoversicherung die securplus-versicherung erstattet der versicherten person fr das versicherte fahrzeug eine entschdigungsleistung bis zu einer hhe des in der tabelle unter 3.4, spalte a, genannten betrages inkl. der gesetzlichen mehrwertsteuer bei reparatur des unfallschadens in einer vertragswerkstatt von renault/dacia und bis zu einer hhe des in der tabelle unter 3.4, spalte b, genannten betrages inkl. der gesetzlichen mehrwertsteuer bei reparatur in einer nicht zu renault/dacia gehrenden vertragswerkstatt.
+3.3 totalschaden im falle eines totalschadens am fahrzeug der versicherten person aufgrund eines unter  1 versicherten ereignissen, erhlt die versicherte person eine entschdigung in hhe des in der tabelle unter 3.4, spalte a genannten betrages. ein totalschaden liegt dann vor, wenn die wiederherstellungskosten (reparaturkosten) den wiederbeschaffungswert des fahrzeuges abzglich des wertes seiner rest- und altteile bersteigen. der wiederbeschaffungswert ist der marktwert, den das fahrzeug unmittelbar vor schadeneintritt darstellt. ein totalschaden wird auch dann angenommen, wenn dieser gutachterlich festgestellt wurde.
+3.4 maximale entschdigung (die maximale entschdigung richtet sich nach dem von der versicherten person gewhlten produkt.)
+produkt
+a (*)
+b (*)
+securplus 300 versicherung
+300 
+150 
+securplus 500 versicherung
+500 
+250 
+securplus 1.000 versicherung
+1.000 
+500 
+(*) a+b sind in  3 definiert.
+ 4 leistungsgrenze die inanspruchnahme der versicherung fr schden im rahmen von 1 ist auf zwei schadenereignisse pro versicherungsjahr begrenzt.
+ 5 rumlicher geltungsbereich die versicherung tritt fr schden, die im rahmen von  1 entstanden sind, innerhalb deutschlands und der geographischen grenzen europas ein.
+ 6 ausschlsse die versicherung tritt in folgenden fllen nicht ein:
+1. bei geringfgigen schden (gesamthhe der reparaturrechnung unter 300  inkl. gesetzlicher mehrwertsteuer). 2. bei schden, die tatschlich nicht repariert wurden (reparaturrechnung einer werkstatt kann nicht vorgelegt werden). davon ausgenommen ist der fall eines totalschadens
+gem  1. 3. wenn der fahrer/nutzer des fahrzeugs keine gltige fahrerlaubnis besitzt. 4. bei vorstzlich herbeigefhrten schden durch die versicherte person oder den fahrer des fahrzeugs. 5. bei vorkommnissen, die sich auerhalb der geographischen grenzen der versicherung gem  5 ereignet haben. 6. bei schden aufgrund eines sportlichen wettbewerbes, eines rennens oder eines wettrennens (mit dazugehrigen testlufen). 7. wenn die vollkaskoversicherung im falle des  3.1 zu keiner entschdigungsleistung verpflichtet ist, obwohl die schadenshhe ber dem vereinbarten selbstbehalt liegt. 8. bei schden, die durch einen wildunfall verursacht werden.
+ 7 schadenmeldung 7.1 im falle eines schadens ist die versicherte person verpflichtet, den schaden innerhalb von 14 tagen nach erfolgter schadenregulierung durch die kaskoversicherung oder nach erhalt der reparaturrechnung diesen bei der maxxogon mobil per e-mail unter schaden-securplus@maxxogon.de oder postalisch an maxxogon mobil assecuradeurgesellschaft mbh, securplus, galgenbergstrae 2 b in 93053 regensburg zu melden. 7.2 fr die schadenregulierung sind u.a. folgende unterlagen an die maxxogon mobil einzureichen:
+ kopie der reparaturrechnung des beschdigten fahrzeugs  kopie des fahrzeugscheins  kopie des ausgefllten europischen unfallberichts (wenn vorhanden)  im falle von  3.1 kopie der eintrittsbesttigung (z. b. die reparaturfreigabe des kostenvoranschlags oder die leistungsabrechnung) der vollkaskoversicherung mit ausweis des
+selbstbehaltes  bei schden unterhalb des selbstbehaltes: kopie der vollkaskoversicherungspolice  name und kontoverbindung zur zahlung der entschdigungsleistung  ausgefllte und unterschriebene schadenmeldung
+abschnitt b
+ 1 beginn des versicherungsschutzes; dauer und ende des vertrages 1.1 beginn des versicherungsschutzes der versicherungsschutz beginnt vorbehaltlich der regelungen ber die folgen verspteter zahlung oder nichtzahlung der erstprmie zum zeitpunkt der bernahme des versicherten fahrzeugs durch die versicherte person. voraussetzung hierfr ist, dass die versicherte person fr das jeweilige fahrzeug versicherungsschutz beantragt. 1.2 dauer/kndigung 1.2.1 securplus-versicherung in verbindung mit einem finanzierungs-/leasingvertrag der rci banque s.a. die dauer des versicherungsvertrages richtet sich nach der gewhlten dauer ihres finanzierungs- oder leasingvertrages bei der rci banque s.a., maximal jedoch 60 monate. bei vertrgen mit einer laufzeit von 48 oder 60 monaten besteht in jedem fall die mglichkeit, diesen vertrag vorzeitig erstmals zum ablauf von 36 monaten mit einer kndigungsfrist von 3 monaten zu kndigen. der securplus-versicherungsvertrag endet zum ablauf der gewhlten laufzeit immer automatisch. 1.2.2 securplus-versicherung ohne eine finanzierungs-/leasingvertrag der rci banque s.a. die dauer kann zwischen 12, 24, 36, 48 und 60 monate gewhlt werden. bei vertrgen mit einer laufzeit von 48 oder 60 monaten besteht in jedem fall die mglichkeit, diesen vertrag vorzeitig erstmals zum ablauf von 36 monaten mit einer kndigungsfrist von 3 monaten zu kndigen. der versicherungsvertrag endet immer zum ablauf der vereinbarten laufzeit automatisch, sptestens zum ablauf von 60 monaten.
+ 2 prmien; versicherungsperiode die prmie wird monatlich gezahlt.
+mdv1631-04-0918
+ 3 flligkeit der prmie; folgen verspteter zahlung oder nichtzahlung 3.1 flligkeit der prmie die prmie ist  unabhngig vom bestehen eines widerrufrechts  unverzglich nach dem zeitpunkt des vereinbarten und in der versicherungsbesttigung angegebenen versicherungsbeginns zu zahlen. liegt der vereinbarte zeitpunkt des versicherungsbeginns vor vertragsschluss, ist die prmie unverzglich nach vertragsschluss zu zahlen. 3.2 folgen verspteter zahlung oder nichtzahlung der prmie wird die prmie nicht zu dem nach  3.1 magebenden flligkeitszeitpunkt gezahlt, ist der versicherer nach magabe des  37 vvg berechtigt, vom vertrag zurckzutreten und ist bei eintritt des versicherungsfalles von der leistung befreit.
+ 4 sepa-lastschrift 4.1 pflichten der versicherten person ist zur einziehung der prmie das sepa-verfahren vereinbart worden, hat die versicherte person zum zeitpunkt der flligkeit der prmie fr eine ausreichende deckung des abbuchungskontos zu sorgen.
+4.2 nderung des zahlungsweges hat die versicherte person zu vertreten, dass die prmien trotz wiederholtem einziehungsversuch nicht eingezogen werden knnen, ist die rci banque s.a. berechtigt, die sepalastschriftvereinbarung in textform zu kndigen. die rci banque s.a. hat in der kndigung darauf hinzuweisen, dass die versicherte person verpflichtet ist, die ausstehende prmie und zuknftige prmien selbst zu bermitteln. anfallende bearbeitungsgebhren fr fehlgeschlagenen lastschrifteinzug knnen der versicherten person in rechnung gestellt werden, wenn der ausfall des pnktlichen zahlungseingangs von ihm zu vertreten ist.
+ 5 prmie bei vorzeitiger vertragsbeendigung endet das versicherungsverhltnis vor ablauf der versicherungsperiode oder wird es nach beginn rckwirkend aufgehoben oder ist es von anfang an wegen arglistiger tuschung nichtig, so gebhrt dem versicherer die prmie oder die geschftsgebhr nach magabe der  39 und 80 vvg. danach steht dem versicherer derjenige teil der prmie zu, der dem zeitraum entspricht, in dem versicherungsschutz bestanden hat bzw. htte bestehen sollen. eine vorzeitige vertragsbeendigung ist im falle einer veruerung des fahrzeugs oder im falle eines totalschadens am fahrzeug mglich.
+ 6 obliegenheiten der versicherten person bei eintritt des versicherungsfalles 6.1 die versicherte person hat zur berprfung des eintritts des versicherungsfalls
+ nach mglichkeit fr die abwendung und minderung des schadens zu sorgen;  weisungen des versicherers zur schadenabwendung/-minderung, soweit fr ihn zumutbar, zu befolgen;  soweit mglich dem versicherer unverzglich jede auskunft  auf verlangen in schriftform  zu erteilen, die zur feststellung des versicherungsfalles oder des umfangs der
+leistungspflicht des versicherers erforderlich ist, sowie jede untersuchung ber ursache und hhe des schadens und ber den umfang der entschdigungspflicht zu gestatten;  vom versicherer angeforderte belege beizubringen, deren beschaffung ihm billigerweise zugemutet werden kann. 6.2 steht das recht auf die vertragliche leistung des versicherers einem dritten zu, so hat dieser die obliegenheiten gem  6.1 ebenfalls zu erfllen, soweit ihm dies nach den tatschlichen und rechtlichen umstnden mglich ist. 6.3 leistungsfreiheit bei obliegenheitsverletzung verletzt die versicherte person eine obliegenheit nach  6.1, so ist der versicherer nach magabe der  28 und 82 vvg leistungsfrei. auer im falle einer arglistigen obliegenheitsverletzung ist der versicherer zur leistung verpflichtet, soweit die verletzung der obliegenheit weder fr den eintritt oder die feststellung des versicherungsfalles noch fr die feststellung oder den umfang der leistungspflicht des versicherers urschlich ist.
+ 7 versicherung fr dritte die versicherte person kann den versicherungsvertrag im eigenen namen fr das interesse eines dritten (fahrzeugnutzer) schlieen. die ausbung der rechte aus diesem vertrag steht nur dem versicherungsnehmer/der versicherten person und nicht auch dem fahrzeugnutzer zu.
+ 8 bergang von ersatzansprchen 8.1 bergang von ersatzansprchen steht der versicherten person ein ersatzanspruch gegen einen dritten zu, geht dieser anspruch auf den versicherer ber, soweit der versicherer den schaden ersetzt. der bergang kann nicht zum nachteil der versicherten person geltend gemacht werden. 8.2 obliegenheiten zur sicherung von ersatzansprchen die versicherte person hat seinen ersatzanspruch oder ein zur sicherung dieses anspruchs dienendes recht unter beachtung der geltenden form- und fristvorschriften zu wahren und nach bergang des ersatzanspruchs auf den versicherer bei dessen durchsetzung durch den versicherer soweit erforderlich mitzuwirken. verletzt die versicherte person diese obliegenheit, ist der versicherer nach magabe des  86
+abs. 2 vvg leistungsfrei.
+ 9 keine leistungspflicht aus besonderen grnden der versicherer ist von der entschdigungspflicht frei, wenn die versicherte person den versicherer arglistig ber tatsachen, die fr den grund oder die hhe der entschdigung von bedeutung sind, tuscht oder zu tuschen versucht. ist die tuschung oder der tuschungsversuch durch rechtskrftiges strafurteil gegen die versicherte person wegen betruges oder betrugsversuches festgestellt, so gelten die voraussetzungen des ersten satzes dieses paragraphen als bewiesen.
+ 10 anzeigen; willenserklrungen; anschriftennderungen 10.1 form soweit gesetzlich keine schriftform verlangt ist und soweit in diesem vertrag nicht etwas anderes bestimmt ist, sind die fr den versicherer bestimmten erklrungen und anzeigen, die das versicherungsverhltnis betreffen und die unmittelbar gegenber dem versicherer erfolgen, in textform abzugeben. erklrungen und anzeigen sollen an die den versicherer oder an die im versicherungsschein oder in dessen nachtrgen als zustndig bezeichnete stelle gerichtet werden. die gesetzlichen regelungen ber den zugang von erklrungen und anzeigen bleiben unberhrt. 10.2 nichtanzeige einer anschriften- bzw. namensnderung hat die versicherte person eine nderung seiner anschrift oder seines namens dem versicherer nicht mitgeteilt, findet  13 vvg anwendung.
+ 11 vollmacht des versicherungsvertreters (assecuradeur) 11.1 erklrungen des versicherungsnehmers und der versicherten person die maxxogon mobil gilt als bevollmchtigt, von der versicherten person abgegebene erklrungen entgegenzunehmen betreffend
+ den abschluss bzw. den widerruf eines versicherungsvertrages;  ein bestehendes versicherungsverhltnis einschlielich dessen beendigung;  anzeige- und informationspflichten vor abschluss des vertrages und whrend des versicherungsverhltnisses. 11.2 erklrungen des versicherers die maxxogon mobil gilt als bevollmchtigt, vom versicherer ausgefertigte versicherungsscheine oder deren nachtrge dem versicherungsnehmer zu bermitteln. 11.3 zahlungen an den assecuradeur die maxxogon mobil gilt als bevollmchtigt, zahlungen, die der versicherungsnehmer im zusammenhang mit der vermittlung oder dem abschluss eines versicherungsvertrags an ihn leistet, anzunehmen. eine beschrnkung dieser vollmacht muss der versicherungsnehmer nur gegen sich gelten lassen, wenn er die beschrnkung bei der vornahme der zahlung kannte oder in folge grober fahrlssigkeit nicht kannte.
+ 12 datenschutz die daten der versicherten person werden durch die rci banque s.a. an mma iard assurance mutuelles und mma iard s.a. zum zweck der antragsprfung und vertragsabwicklung verarbeitet und genutzt.
+ 13 verjhrung die ansprche aus dem versicherungsvertrag verjhren nach drei jahren. die verjhrungsfrist beginnt mit dem schluss des jahres, in dem der anspruch entstanden ist und der glubiger von den anspruch begrndenden umstnden und der person des schuldners kenntnis erlangt oder htte erlangen knnen (grobe fahrlssigkeit ausgeschlossen). ist ein anspruch aus dem versicherungsvertrag beim versicherer angemeldet worden, wird bei der fristberechnung der zeitraum zwischen anmeldung und zugang der in textform mitgeteilten entscheidung des versicherers beim anspruchsteller nicht mitgezhlt.
+ 14 zustndiges gericht fr klagen aus dem versicherungsverhltnis gegen den versicherer gelten die gerichtsstnde der bundesrepublik deutschland nach  13, 17, 21, 29 zpo sowie  215 vvg.
+ 15 anzuwendendes recht fr diesen vertrag gilt deutsches recht.
+statusbezogene informationen
+1. rci versicherungs-service gmbh hauptsitz: rci versicherungs-service gmbh, jagenbergstrae 1, 41468 neuss erlaubnis nach  34d abs. 1 gewo, aufsichtsbehrde: ihk mittlerer niederrhein, friedrichstrae 40, 41460 neuss, www.mittlerer-niederrhein.ihk.de versicherungsvermittlerregister (www.vermittlerregister.info): registrierungs-nr.: d-8tmh-z7qld-65 mitglied der ihk mittlerer niederrhein, friedrichstrae 40, 41460 neuss berufsbezeichnung: versicherungsvertreter mit erlaubnis nach  34d abs.1 gewerbeordnung (gewo); bundesrepublik deutschland berufsrechtliche regelungen:  34d gewerbeordnung (ggf.  34e gewerbeordnung);  59-68 vvg, versvermv die berufsrechtlichen regelungen knnen ber die vom bundesministerium der justiz und von der juris gmbh betriebene homepage www.gesetze-im-internet.de eingesehen und abgerufen werden.
+2. maxxogon mobil assecuradeurgesellschaft mbh hauptsitz: maxxogon mobil assecuradeurgesellschaft mbh, holzstrae 2, 40221 dsseldorf vertretungsberechtigte geschftsfhrer: ralf schneider, franz rudolf golling, andreas berger registergericht: amtsgericht dsseldorf registernummer: hrb 65348 umsatzsteueridentifikationsnummer gem  27 a umsatzsteuergesetz: de 277109021
+angaben gem eu-vermittlerrichtlinie: vermittlerregister deutscher industrie- und handelskammertag (dihk) postanschrift: breite strae 29, 10178 berlin telefon: +49 (0)30 20308-0; fax: +49 (0)30 20308-1000; e-mail: infocenter@berlin.dihk.de; url: www.dihk.de vermittlernummer nach  34d absatz 1 der gewerbeordnung; registrierungs-nr.: d-x9a4-7v7bm-27
+beschwerdestellen: 1. bundesanstalt fr finanzdienstleistungsaufsicht (bafin), sektor versicherungsaufsicht, graurheindorfer str. 108, 53117 bonn 2. versicherungsombudsmann e.v.*, postfach 080632, 10006 berlin; e-mail: beschwerde@versicherungsombudsmann.de telefon: 0800 3696000 (kostenfrei); fax: 0800 3699000 (kostenfrei) *der versicherungsombudsmann e.v. ist eine unabhngige und fr verbraucher kostenfrei arbeitende schlichtungsstelle. voraussetzung fr das schlichtungsverfahren vor dem ombudsmann ist, dass sie uns zunchst die mglichkeit gegeben haben, unsere entscheidung zu berprfen.
+mdv1631-04-0918
+vollkaskoversicherung: ist es ein vollkaskoschaden, wenn ich die handbremse nicht anziehe und der wagen in ein anders auto rollt bzw. gegen einen gegenstand wie z.b einen baum 
+nein da grob fahrlässig
+vollkaskoversicherung: ist es ein vollkaskoschaden, wenn ich beim putzen mit einem dreckigen lappen den lack beschädige?
+nein da grob fahrlässig
+vollkaskoversicherung: was passiert, wenn ein nicht eingetragener fahrer mit dem fahrzeug einen vollkaskoschaden verursacht?
+- gemäß dem fall dem eingetragenen fahrer war nicht gut (kopfschmerzen, übelkeit) und hat aufgrund dessen das fahrzeug von einem nicht eingetragenen fahrer bewegen lassen. ----> vollkaskoschaden = übernommen oder nicht übernommen
+es wird nur dann der schaden von der vk übernommen, wenn der fahrer eingetragen ist. ´
+es kann 
+-gemäß dem fahrer fährt ohne begründung und ist nicht eingetragen?!
+kann nur die sb über s+ in anspruch nehmen /// versicherung verweigert zahlung für die restliche summe 
+kann nur die sb in anspruch nehmen, über s+ versicherung wird nicht zahlen 
+-wenn der schaden sich auf 500 euro beläuft bei sb300; ist der fall denkbar, dass der kunde dann 300 über sp bekommt und wie bei dem rabattretter dann einfach 200 selber bezahlt und somit kein konflikt mit der vk entsteht?! (kann er deshalb von seiner versicherung gekündigt werden)
+nein kann er nicht, er muss sich nur an die wk bindung der vollkasko halten, wenn diese den schaden reguliert. sonst kann er sich aussuchen in welche werkstatt er fährt 
+-teilkaskoversicherung: wie ist es bei selbstverschuldetem glasbruch?? 
+nie abgesichert
+-teilkaskoversicherung: wie ist die situation solange das schuldverhältnis bei unfällen mit 2oder mehreren parteien nicht geklärt ist.
+schuld muss einer partei zugewiesen sein.
+zusatzleistungen: wie stark darf man den kunden beraten bei seiner eigenen versicherung zusatzleistungen rausnehmen zu lasen bzw. ist dies überhaupt möglich in allen fällen oder gibt es klauseln die es verhindern zusatzleistungen innerhalb des versicherungsjahres zu entfernen. (man muss vorsichtig in der beratung sein sollte dem so seien) 
+kann man aber, bitte dann mit wiedervorlage abschließen, wenn der kunde mit der versicherung rücksprache gehalten hat. bitte nicht abschließen, wenn der kunde z.b sagt ja ich werde auf 1000 euro sb hochgehen. erst wenn er definitiv sagt, dass er alles geklärt hat und die sb angepasst wurde bzw. der rabattretter rausgenommen wurde. 
+darauf bezogen ist es weiter möglich, die sb zu variieren oder gibt es auch hier die möglichkeit es vertraglich zu verhindern?
+ja ist es!
+fragen zu den agb s von sp: ist mit der definition: " auf zweimal jährlich begrenzt" gemeint, dass 2 schäden reguliert werden oder unter voraussetzung, dass; 2 schäden reguliert werden 
+ja 2 schäden im jahr werden übernommen 
+totalschaden: kann man die versicherung auch gebrauchen, wenn man einen totalschaden hat fall vollkasko da man mit vollkaskoversicherung doch auch die sb leisten muss?!?!?
+ja die sb wird von der s+ übernommen 
+guten tag ... hier von der r/n bank 
+spreche ich schon mit ...
+es geht einmal um die finanzierung von dem xy.
+vorab eine frage, wir zeichnen die gespräche aus dokumentationsgründen immer mit auf, ist das für sie auch in ordnung?
+und einmal bitte ihr geburtsdatum zum abgleich, damit ich sicher bin, dass ich mit der richtigen person spreche.
+ich habe mir gerade nochmal ihre finanzierungunterlagen angesehen und dabei ist mir aufgefallen, dass sie nachträglich noch in frage kommen für unseren securplus schutz.
+pause // ist der schutz bereits bekannt?
+kunde: was ist das?
+es handelt sich dabei um den fall von einem selbstverschuldeten vollkaskoschaden, da sie hier ja immer die selbstbeteiligung übernehmen müssen.
+pause
+genau hierfür ist der securplusschutz, da wir in diesem fall die sb komplett für sie übernehmen.
+sollte es also zu einem schadensfall kommen, reichen sie uns die rechnung ihrer r/d/n werkstatt und die schadensnummer der versicherung ein und wir erstatten ihnen die sb zurück.
+es wäre ihr auto versichert –egal wer damit fährt, ohne km-beschränkung, europaweit und zwar bis zu 2 schäden pro jahr.-
+wäre das für sie auch interessant?
+pause
+kunde: was kostet das?
+wie viel sb haben sie denn in der vollkasko? kunde: 300/500/1000
+bei einer sb von 300€ liegen wir da bei 8,99€ die zu ihrer rate von dazu kommen und dann sind sie auf jeden fall rundum abgesichert.
+wenn sie möchten kann ich ihnen den securplusschutz noch hinzufügen, dann erhalten sie natürlich noch einmal alle unterlagen in 3-4 werktagen zugesendet und haben auch noch 30 tage widerrufsrecht.
+freundliches nein von kunden:
+einwandbehandlung!
+schulung securplus
+15.05.2019 i andr schiffer i call & sales
+1 produkt
+2
+confidential c
+produkt
+berblick securplus
+ securplus minimiert die kosten, die im falle eines selbstverschuldeten unfalls am eigenen fahrzeug entstehen.
+ der deckungsumfang beinhaltet  die erstattung der selbstbeteiligung bei vorhandener vollkaskoversicherung  funktion: selbstbeteiligungsversicherung und rabattretter  die reparaturkosten bis zu einer zu vereinbarenden hchstentschdigung, falls kein vollkaskoschutz besteht  funktion: mini-kasko
+3 confidential c
+produkt
+produktvarianten securplus
+ securplus 300 fr 8,99 eur monatlich  300 eur bei renault oder nissan; 150 eur bei fremdwerksttten
+ securplus 500 fr 11,99 eur monatlich  500 eur bei renault oder nissan; 250 eur bei fremdwerksttten
+ securplus 1.000 fr 18,99 eur monatlich  1.000 eur bei renault oder nissan; 500 eur bei fremdwerksttten
+4
+confidential c
+produkt
+produktdetails securplus
+ bei vorhandener vollkaskoversicherung muss der kaskoversicherer die leistungspflicht besttigen (z. b. durch erteilung einer reparaturkostenfreigabe), jedoch nicht zwingend auszahlen (rabattretter).
+ absicherung von 2 schadenfllen pro versicherungsjahr  unkomplizierte und schnelle schadenabwicklung  europaweiter schutz
+5 confidential c
+produkt
+kundennutzen securplus
+ mit vorhandener vollkaskoversicherung  selbstbeteiligungsversicherung  rabattretter
+ ohne vollkaskoversicherung  mini-kasko
+ideal fr neuwagenkunden ideal fr kufer lterer fahrzeuge
+6 confidential c
+produkt
+versicherbare ereignisse securplus
+ absicherung von kleinen missgeschicken:  klassische selbstverschuldete verkehrsunflle  parkschden  unflle mit laternen, leitplanken, bumen etc.
+ versichert sind selbstverschuldete verkehrsunflle mit einem teil- oder totalschaden am kundenfahrzeug.
+ versicherbar sind alle fahrzeuge bis 3,5 t zul. gesamtgewicht.
+ versicherungsschutz fr jede person:  unabhngig vom alter des fahrers  unabhngig von der sf-klasse  unabhngig, ob private oder gewerbliche nutzung  unabhngig von der fahrzeugleistung und der jhrlichen laufleistung
+7 confidential c
+produkt
+nicht versicherbare ereignisse securplus
+ ausschlsse  fahrzeuge ber 3,5t zul. gesamtgewicht  mietfahrzeuge, taxen und kurierdienste
+ nicht versichert sind  vandalismus  wildschden  naturgewalten (brand, sturm, hagel, berschwemmung etc.)  diebstahl  glasschden  schden, die nicht repariert wurden  schden, die bei sportlichen wettbewerben entstehen  vorstzlich herbeigefhrte schden  fahrer ohne gltige fahrerlaubnis
+8
+confidential c
+produkt
+kndigung securplus
+ automatische (ordentliche) kndigung
+ securplus endet mit ende der gewhlten laufzeit automatisch (keine ordentliche kndigung notwendig)  zu beachten: bei vertrgen mit laufzeiten von 42 bis 60 monaten besteht ein erstmaliges kndigungsrecht zum
+ablauf von 36 monaten und wieder zum ablauf von 48 monaten.
+ auerordentliche kndigungsmglichkeiten des kunden
+ erfordert eine kndigung in schriftform  nach fahrzeugverkauf (kopie des kaufvertrages notwendig) und wagentausch  nach schadenfall (information von maxxogon einholen)
+ auerordentliche kndigungsmglichkeit des versicherers
+ nach schadenfall: information von maxxogon an rci
+9 confidential c
+2 verkauf
+10 | fuzeile ber men einfgen kopf-und fuzeile (fr alle bernehmen) einfgen
+confidential c
+verkauf
+zielgruppen securplus
+ alle kunden mit ,,vollkaskomentalitt"  kunden, die zustzlich zur vk auch keine selbstbeteiligung zahlen wollen  absicherung der selbstbeteiligung durch securplus  tipp: securplus als extraschutz  bernahme der selbstbeteiligung  nutzung als rabattretter
+ junge fahrer (kunden mit einer geringen sf-klasse)  fahranfnger, junge fahrer und ,,schlechte" fahrer  geringe sf-klasse  hohe prmie in der vollkaskoversicherung  tipp: securplus als extraschutz und vollkasko mit hoher selbstbeteiligung
+11
+confidential c
+verkauf
+zielgruppen securplus
+ gebrauchtwagen (kunden mit fahrzeugen lter als 3 jahre)  neuwagen: ca. 90% aller neuwagen haben eine vollkaskoversicherung mit einer durchschnittlichen selbstbeteiligung von 450 euro  kunden kndigen zunehmend ihre vk ab einem fahrzeugalter ab 3 jahren  tipp: securplus als gnstige ,,mini-kasko" statt teure vollkasko
+ gewerbliche kunden  durchschnittliche sb in der vk bei gewerblichen kunden deutlich hher  absicherung der selbstbeteiligung (= ,,kleinschden") durch securplus  keine belastung der schadenquote in der vollkasko  gnstiger beitrag  tipp: securplus als ,,selbstbeteiligungsversicherung" und ,,rabattretter" fr die vollkasko
+12 confidential c
+3 schaden
+13 | fuzeile ber men einfgen kopf-und fuzeile (fr alle bernehmen) einfgen
+confidential c
+schaden
+schadenbeispiele securplus
+kfz-versicherungsschutz
+reparaturkosten am fahrzeug erstattung durch die kfz-versicherung eigenleistung ohne securplus monatlicher beitrag securplus erstattung durch securplus eigenleistung mit securplus
+14
+kfz-haftpflicht + vollkasko mit 500  selbstbeteiligung
++ securplus 500
+1.400 *
+kfz-haftpflicht + vollkasko mit 1.000 
+selbstbeteiligung +
+securplus 1.000
+1.400 *
+kfz-haftpflicht + teilkasko (ohne
+vollkasko) +
+securplus 1.000
+1.400 *
+900 
+400 
+0
+500 
+1.000 
+1.400 
+11,99 
+18,99 
+18,99 
+500 
+1.000 
+1.000 
+0
+0
+400 
+* durchschnittliche schadenhhe vollkasko (quelle: statistik gdv)
+confidential c
+4 kontakt
+15 | fuzeile ber men einfgen kopf-und fuzeile (fr alle bernehmen) einfgen
+confidential c
+kontakt
+kontakt securplus
+maxxogon
+tel.:
+0941 46520291
+e-mail fr vertragsfragen: service-securplus@maxxogon.de
+e-mail fr schden:
+schaden-securplus@maxxogon.de
+rci andr schiffer tel.: e-mail:
+02131 4011147 andre.schiffer@rcibanque.com
+16
+confidential c
