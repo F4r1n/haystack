@@ -2,7 +2,7 @@ import logging
 import tarfile
 import tempfile
 import zipfile
-import docx
+from docx import Document
 from pathlib import Path
 from typing import Callable, List, Optional
 
@@ -35,15 +35,15 @@ def convert_files_to_dicts(dir_path: str, clean_func: Optional[Callable] = None,
     documents = []
     for path in file_paths:
         if path.suffix.lower() == ".txt":
-            with open(path) as doc:
+            with open(path, encoding="utf8") as doc:
                 text = doc.read()
         elif path.suffix.lower() == ".pdf":
             pages = pdf_converter.extract_pages(path)
             text = "\n".join(pages)
         elif path.suffix.lower() == ".docx":
-            doc = docx.Document(path)
+            document = Document(path)
             fullText = []
-            for para in doc.paragraphs:
+            for para in document.paragraphs:
                 fullText.append(para.text)
             text = '\n'.join(fullText)
         else:
@@ -57,11 +57,20 @@ def convert_files_to_dicts(dir_path: str, clean_func: Optional[Callable] = None,
             for para in text.split("\n\n"):
                 if not para.strip():  # skip empty paragraphs
                     continue
+                # if not isNumber(para):
+                #     documents.append({"name": path.name, "text": para})
                 documents.append({"name": path.name, "text": para})
         else:
+            # if not isNumber(text):
+            #     documents.append({"name": path.name, "text": text})
             documents.append({"name": path.name, "text": text})
 
     return documents
+
+
+def isNumber(str: str) -> bool:
+    strippedString = str.replace(',', '').replace('.', '').strip()
+    return strippedString.isdigit()
 
 
 def fetch_archive_from_http(url: str, output_dir: str, proxies: Optional[dict] = None):

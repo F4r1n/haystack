@@ -24,7 +24,7 @@ def clean_text(text: str) -> str:
 
 
 def main():
-    POPULATE_DOCUMENT_STORE = True
+    POPULATE_DOCUMENT_STORE = False
 
     document_store = ElasticsearchDocumentStore(host="localhost", username="", password="",
                                                 index="document",
@@ -70,15 +70,16 @@ def main():
         document_store.write_documents(docs_to_index)
 
     # question = "Wie viele haben Angst um ihren Job?"
-    question = "wer glaubt dass der eigene Job die Krise überleben werde?"
-    question = question.lower()  # auch hier wieder: Kleinschreibung zwingend notwendig!
+    question = "welche leistungen sind ausgeschlossen?"
+    # auch hier wieder: Kleinschreibung zwingend notwendig!
+    question = question.lower()
 
     # Wir können aktuell keinen Reader verwenden, da diese scheinbar QA fine tuning voraussetzen
     # Der Retriever holt anhand der embeddings die besten Treffer ran.
     # get_answers() ohne reader nicht verwendbar
     finder = Finder(reader=None, retriever=retriever)
     prediction = finder.get_answers_via_similar_questions(
-        question, top_k_retriever=2)
+        question, top_k_retriever=5)
     print_answers(prediction, details="all")
 
     # Idee:
