@@ -151,3 +151,4 @@ model
 
 model.ckpt
 pytorch_model.bin
+text_embs_dump.json

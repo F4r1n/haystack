@@ -1,6 +1,7 @@
 import os
 
 import pandas as pd
+import json
 
 from haystack import Finder
 from haystack.database.elasticsearch import ElasticsearchDocumentStore
@@ -24,7 +25,7 @@ def clean_text(text: str) -> str:
 
 
 def main():
-    POPULATE_DOCUMENT_STORE = True
+    POPULATE_DOCUMENT_STORE = False
 
     document_store = ElasticsearchDocumentStore(host="localhost", username="", password="",
                                                 index="document",
@@ -39,32 +40,18 @@ def main():
         gpu=True, model_format="transformers")
 
     if POPULATE_DOCUMENT_STORE:
-        doc_dir = os.getcwd() + "\\kbQA\\data\\Skripte\\Securplus\\txt"
-        dicts = convert_files_to_dicts(
-            dir_path=doc_dir, clean_func=clean_text, split_paragraphs=True)
+        doc_dir = os.getcwd() + "\\kbQA\\data\\text_embs_dump.json"
 
-        with open("Output.txt", "w") as text_file:
-            text = ""
-            for doc in dicts:
-                text = text + "\n" + doc["text"]
-            text_file.write(text)
-        df = pd.DataFrame.from_dict(dicts)
-
-        # Hier muss man aufpassen! Wir erzeugen an dieser Stelle keine embeddings für die questions, sondern für
-        # für die Texte, d.h. die Antworten. Daher sind die Namen der Variablen etwas verwirrend gewählt.
-        # dummy_questions ist einfach nur eine steigende Zahl beginnend bei eins. Wird benötigt, da sonst Exceptions
-        # bei der Suche geschmissen werden.
-        # Im Tutorial scheint von einem FAQ ausgegangen zu sein, bei dem Frage und Antwort
-        # definiert sind und somit embeddings für die vordefinierte Frage erzeugt werden können und eigentlich nur
-        # auf diese basierend, die k-besten Kandidaten zurückgegeben werden. Wir dagegen erzeugen embeddings für
-        # jeden einzelnen Text.
-        # todo: Da wir für jeden Text embeddings erzeugen müssen wir eventuell eine Sentence Segmentation durchführen,
-        #       denn je länger die Texte werden, desto ungenauer werden auch die embeddings. Pro Satz embedding sind
-        #       deutlich exakter.
-        questions = list(df["text"].values)
-        df["question_emb"] = retriever.create_embedding(texts=questions)
-        dummy_questions = [f"{no}" for no, x in enumerate(questions, start=1)]
-        df["question"] = dummy_questions
+        df = pd.DataFrame(
+            columns=['name', 'text', 'question_emb', 'question'], )
+        with open(doc_dir, encoding="utf8") as file:
+            i = 0
+            for cnt, line in enumerate(file):
+                data = json.loads(line)
+                for j in range(len(data["paragraph"])):
+                    df = df.append(
+                        {"question_emb": data["embeddings"][j], "name": cnt, "text": data["paragraph"][j], "question": i}, ignore_index=True)
+                    i = i + 1
         print(df.head())
 
         docs_to_index = df.to_dict(orient="records")
