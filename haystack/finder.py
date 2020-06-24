@@ -23,7 +23,8 @@ class Finder:
         self.retriever = retriever
         self.reader = reader
         if self.reader is None and self.retriever is None:
-            raise AttributeError("Finder: self.reader and self.retriever can not be both None")
+            raise AttributeError(
+                "Finder: self.reader and self.retriever can not be both None")
 
     def get_answers(self, question: str, top_k_reader: int = 1, top_k_retriever: int = 10, filters: Optional[dict] = None):
         """
@@ -38,19 +39,23 @@ class Finder:
         """
 
         if self.retriever is None or self.reader is None:
-            raise AttributeError("Finder.get_answers requires self.retriever AND self.reader")
+            raise AttributeError(
+                "Finder.get_answers requires self.retriever AND self.reader")
 
         # 1) Apply retriever(with optional filters) to get fast candidate documents
-        documents = self.retriever.retrieve(question, filters=filters, top_k=top_k_retriever)
+        documents = self.retriever.retrieve(
+            question, filters=filters, top_k=top_k_retriever)
 
         if len(documents) == 0:
-            logger.info("Retriever did not return any documents. Skipping reader ...")
+            logger.info(
+                "Retriever did not return any documents. Skipping reader ...")
             empty_result = {"question": question, "answers": []}
             return empty_result
 
         # 2) Apply reader to get granular answer(s)
         len_chars = sum([len(d.text) for d in documents])
-        logger.info(f"Reader is looking for detailed answer in {len_chars} chars ...")
+        logger.info(
+            f"Reader is looking for detailed answer in {len_chars} chars ...")
 
         results = self.reader.predict(question=question,
                                       documents=documents,
@@ -77,15 +82,18 @@ class Finder:
         """
 
         if self.retriever is None:
-            raise AttributeError("Finder.get_answers_via_similar_questions requires self.retriever")
+            raise AttributeError(
+                "Finder.get_answers_via_similar_questions requires self.retriever")
 
         results = {"question": question, "answers": []}  # type: Dict[str, Any]
 
         # 1) Optional: reduce the search space via document tags
         if filters:
             logging.info(f"Apply filters: {filters}")
-            candidate_doc_ids = self.retriever.document_store.get_document_ids_by_tags(filters)  # type: ignore
-            logger.info(f"Got candidate IDs due to filters:  {candidate_doc_ids}")
+            candidate_doc_ids = self.retriever.document_store.get_document_ids_by_tags(
+                filters)  # type: ignore
+            logger.info(
+                f"Got candidate IDs due to filters:  {candidate_doc_ids}")
 
             if len(candidate_doc_ids) == 0:
                 # We didn't find any doc matching the filters
@@ -95,18 +103,20 @@ class Finder:
             candidate_doc_ids = None  # type: ignore
 
         # 2) Apply retriever to match similar questions via cosine similarity of embeddings
-        documents = self.retriever.retrieve(question, top_k=top_k_retriever, candidate_doc_ids=candidate_doc_ids)  # type: ignore
+        documents = self.retriever.retrieve(
+            question, top_k=top_k_retriever, candidate_doc_ids=candidate_doc_ids)  # type: ignore
 
         # 3) Format response
         for doc in documents:
-            #TODO proper calibratation of pseudo probabilities
+            # TODO proper calibratation of pseudo probabilities
             cur_answer = {"question": doc.question, "answer": doc.text, "context": doc.text,  # type: ignore
-                          "score": doc.query_score, "offset_start": 0, "offset_end": len(doc.text), "meta": doc.meta
+                          "score": doc.query_score, "offset_start": 0, "offset_end": len(doc.text), "meta": doc.meta, "id": doc.id
                           }
             if self.retriever.embedding_model:  # type: ignore
                 probability = (doc.query_score + 1) / 2  # type: ignore
             else:
-                probability = float(expit(np.asarray(doc.query_score / 8)))  # type: ignore
+                probability = float(
+                    expit(np.asarray(doc.query_score / 8)))  # type: ignore
 
             cur_answer["probability"] = probability
             results["answers"].append(cur_answer)
@@ -168,12 +178,14 @@ class Finder:
         """
 
         if not self.reader or not self.retriever:
-            raise Exception("Finder needs to have a reader and retriever for the evaluation.")
+            raise Exception(
+                "Finder needs to have a reader and retriever for the evaluation.")
 
         finder_start_time = time.time()
         # extract all questions for evaluation
         filter = {"origin": label_origin}
-        questions = self.retriever.document_store.get_all_documents_in_index(index=label_index, filters=filter)  # type: ignore
+        questions = self.retriever.document_store.get_all_documents_in_index(
+            index=label_index, filters=filter)  # type: ignore
 
         correct_retrievals = 0
         summed_avg_precision_retriever = 0
@@ -192,7 +204,7 @@ class Finder:
         summed_f1_top1_has_answer = 0
         summed_f1_topk_has_answer = 0
         correct_no_answers_top1 = 0
-        correct_no_answers_topk =  0
+        correct_no_answers_topk = 0
         read_times = []
 
         # retrieve documents
@@ -201,13 +213,15 @@ class Finder:
         for q_idx, question in enumerate(questions):
             question_string = question["_source"]["question"]
             single_retrieve_start = time.time()
-            retrieved_docs = self.retriever.retrieve(question_string, top_k=top_k_retriever, index=doc_index)
+            retrieved_docs = self.retriever.retrieve(
+                question_string, top_k=top_k_retriever, index=doc_index)
             retrieve_times.append(time.time() - single_retrieve_start)
             for doc_idx, doc in enumerate(retrieved_docs):
                 # check if correct doc among retrieved docs
                 if doc.meta["doc_id"] == question["_source"]["doc_id"]:
                     correct_retrievals += 1
-                    summed_avg_precision_retriever += 1 / (doc_idx + 1)  # type: ignore
+                    summed_avg_precision_retriever += 1 / \
+                        (doc_idx + 1)  # type: ignore
                     questions_with_docs.append({
                         "question": question,
                         "docs": retrieved_docs,
@@ -227,7 +241,8 @@ class Finder:
             question_string = question["question"]["_source"]["question"]
             docs = question["docs"]
             single_reader_start = time.time()
-            predicted_answers = self.reader.predict(question_string, docs, top_k_reader)
+            predicted_answers = self.reader.predict(
+                question_string, docs, top_k_reader)
             read_times.append(time.time() - single_reader_start)
             # check if question is answerable
             if question["question"]["_source"]["answers"]:
@@ -239,7 +254,8 @@ class Finder:
                     if answer["document_id"] == question["correct_es_doc_id"]:
                         gold_spans = [(gold_answer["answer_start"], gold_answer["answer_start"] + len(gold_answer["text"]) + 1)
                                       for gold_answer in question["question"]["_source"]["answers"]]
-                        predicted_span = (answer["offset_start_in_doc"], answer["offset_end_in_doc"])
+                        predicted_span = (
+                            answer["offset_start_in_doc"], answer["offset_end_in_doc"])
 
                         for gold_span in gold_spans:
                             # check if overlap between gold answer and predicted answer
@@ -266,13 +282,17 @@ class Finder:
                                     exact_matches_topk_has_answer += 1
                                     found_em = True
                             # calculate f1
-                            pred_indices = list(range(predicted_span[0], predicted_span[1] + 1))
-                            gold_indices = list(range(gold_span[0], gold_span[1] + 1))
-                            n_overlap = len([x for x in pred_indices if x in gold_indices])
+                            pred_indices = list(
+                                range(predicted_span[0], predicted_span[1] + 1))
+                            gold_indices = list(
+                                range(gold_span[0], gold_span[1] + 1))
+                            n_overlap = len(
+                                [x for x in pred_indices if x in gold_indices])
                             if pred_indices and gold_indices and n_overlap:
                                 precision = n_overlap / len(pred_indices)
                                 recall = n_overlap / len(gold_indices)
-                                current_f1 = (2 * precision * recall) / (precision + recall)
+                                current_f1 = (2 * precision *
+                                              recall) / (precision + recall)
                                 # top-1 answer
                                 if answer_idx == 0:
                                     summed_f1_top1 += current_f1  # type: ignore
@@ -330,8 +350,10 @@ class Finder:
 
         logger.info((f"{correct_readings_topk} out of {number_of_questions} questions were correctly answered "
                      f"({(correct_readings_topk/number_of_questions):.2%})."))
-        logger.info(f"{number_of_questions-correct_retrievals} questions could not be answered due to the retriever.")
-        logger.info(f"{correct_retrievals-correct_readings_topk} questions could not be answered due to the reader.")
+        logger.info(
+            f"{number_of_questions-correct_retrievals} questions could not be answered due to the retriever.")
+        logger.info(
+            f"{correct_retrievals-correct_readings_topk} questions could not be answered due to the reader.")
 
         results = {
             "retriever_recall": retriever_recall,
