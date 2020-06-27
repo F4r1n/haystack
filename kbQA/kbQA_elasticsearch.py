@@ -101,6 +101,6 @@ if __name__ == '__main__':
     # You can configure how many candidates the reader and retriever shall return
     # The higher top_k_retriever, the better (but also the slower) your answers.
     prediction = finder.get_answers(
-        question="Who is the father of Arya Stark?", top_k_retriever=10, top_k_reader=3)
+        question="Who is the father of Arya Stark?", top_k_retriever=5, top_k_reader=3)
 
-    print_answers(prediction, details="minimal")
+    print_answers(prediction, details="all")

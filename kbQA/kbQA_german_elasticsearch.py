@@ -12,11 +12,12 @@ from haystack.reader.transformers import TransformersReader
 from haystack.utils import print_answers
 from haystack.retriever.elasticsearch import ElasticsearchRetriever
 
+# windows workaround to prevent endless recursion
 if __name__ == '__main__':
     # Start new server or connect to a running one. true and false respectively
     LAUNCH_ELASTICSEARCH = False
     # Determines whether the Elasticsearch Server has to be populated with data or not
-    POPULATE_DOCUMENT_STORE = True
+    POPULATE_DOCUMENT_STORE = False
 
     # Start an Elasticsearch server
     if LAUNCH_ELASTICSEARCH:
@@ -37,15 +38,13 @@ if __name__ == '__main__':
 
     # Initialize Elasticsearch with docs
     if POPULATE_DOCUMENT_STORE:
-        # set path to directory conating the text files
-        doc_dir = os.getcwd() + "\\kbQA\\data\\lotr"
+        # set path to directory containing the text files
+        doc_dir = os.getcwd() + "\\kbQA\\data\\tesla"
         # convert files to dicts containing documents that can be indexed to our datastore
         dicts = convert_files_to_dicts(
             dir_path=doc_dir, clean_func=clean_wiki_text, split_paragraphs=True)
-        # You can optionally supply a cleaning function that is applied to each doc (e.g. to remove footers)
-        # It must take a str as input, and return a str.
 
-        # Now, let's write the docs to our DB.
+        # write the docs to the elasticsearch database
         document_store.write_documents(dicts)
 
     # ## Initalize Retriever, Reader,  & Finder
@@ -57,38 +56,14 @@ if __name__ == '__main__':
     #
     # They use some simple but fast algorithm.
     # **Here:** We use Elasticsearch's default BM25 algorithm
-    # **Alternatives:**
-    # - Customize the `ElasticsearchRetriever`with custom queries (e.g. boosting) and filters
-    # - Use `EmbeddingRetriever` to find candidate documents based on the similarity of
-    #   embeddings (e.g. created via Sentence-BERT)
-    # - Use `TfidfRetriever` in combination with a SQL or InMemory Document store for simple prototyping and debugging
 
-    # retriever = ElasticsearchRetriever(document_store=document_store)
-
-    # Alternative: An in-memory TfidfRetriever based on Pandas dataframes for building quick-prototypes
-    # with SQLite document store.
-
-    from haystack.retriever.tfidf import TfidfRetriever
-    retriever = TfidfRetriever(document_store=document_store)
+    retriever = ElasticsearchRetriever(document_store=document_store)
 
     # ### Reader
     #
     # A Reader scans the texts returned by retrievers in detail and extracts the k best answers. They are based
     # on powerful, but slower deep learning models.
-    #
-    # Haystack currently supports Readers based on the frameworks FARM and Transformers.
-    # With both you can either load a local model or one from Hugging Face's model hub (https://huggingface.co/models).
-    # **Here:** a medium sized RoBERTa QA model using a Reader based on
-    #           FARM (https://huggingface.co/deepset/roberta-base-squad2)
-    # **Alternatives (Reader):** TransformersReader (leveraging the `pipeline` of the Transformers package)
-    # **Alternatives (Models):** e.g. "distilbert-base-uncased-distilled-squad" (fast) or
-    #                            "deepset/bert-large-uncased-whole-word-masking-squad2" (good accuracy)
-    # **Hint:** You can adjust the model to return "no answer possible" with the no_ans_boost. Higher values mean
-    #           the model prefers "no answer possible"
 
-    # #### TransformersReader
-
-    # Alternative:
     reader = TransformersReader(
         model="dbmdz/bert-base-german-uncased", tokenizer="dbmdz/bert-base-german-uncased", use_gpu=-1)
 
@@ -99,8 +74,7 @@ if __name__ == '__main__':
     finder = Finder(reader, retriever)
 
     # You can configure how many candidates the reader and retriever shall return
-    # The higher top_k_retriever, the better (but also the slower) your answers.
+    # top_k_retriever: number of documents, top_k_reader: number of answers to be retunred
     prediction = finder.get_answers(
-        question="Wer ist der Ringträger?", top_k_retriever=5, top_k_reader=3)
-
+        question="fährt das auto wenn der stecker steckt?", top_k_retriever=5, top_k_reader=3)
     print_answers(prediction, details="all")
