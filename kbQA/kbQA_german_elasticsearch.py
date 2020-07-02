@@ -14,6 +14,7 @@ from haystack.retriever.elasticsearch import ElasticsearchRetriever
 
 # windows workaround to prevent endless recursion
 if __name__ == '__main__':
+    programstart = time.time()
     # Start new server or connect to a running one. true and false respectively
     LAUNCH_ELASTICSEARCH = False
     # Determines whether the Elasticsearch Server has to be populated with data
@@ -66,9 +67,36 @@ if __name__ == '__main__':
     # The Finder sticks together reader and retriever in a pipeline to answer
     # our actual questions.
     finder = Finder(reader, retriever)
-    # You can configure how many candidates the reader and retriever shall return
-    # top_k_retriever: number of documents, top_k_reader: number of answers to be returned
-    prediction = finder.get_answers(
-        question="fährt das auto wenn der stecker steckt?",
-        top_k_retriever=5, top_k_reader=3)
-    print_answers(prediction, details="all")
+    initend = time.time()
+    questions = [
+        "worauf sollte man auf Fähren achten?",
+        "wird die verkehrschilderkennung für alle kommen?",
+        "was beinhaltet der Autopilot?",
+        "wie viel verbaucht das Model 3?",
+        "fährt das auto wenn der stecker steckt?",
+        "Welche dimension haben die kleinen Sommerreifen?",
+        "wie viel zoll haben die Sommerreifen?",
+        "Werden UV-Strahlen beim Tesla geblockt?",
+
+        "Ich habe bei Tesla 500€ pro Rad bezahlt.",
+        "Tempomat Geschwindigkeit ändern.",
+        "die batterie sollte mindestens 50% haben."
+    ]
+    # auch hier wieder: Kleinschreibung zwingend notwendig!
+    # question = question.lower()
+    times = []
+
+    for question in questions:
+        start_time = time.time()
+        prediction = finder.get_answers(
+            question)
+        times.append(time.time() - start_time)
+        print_answers(prediction, details="minimal")
+
+    total = 0
+    for zeit in times:
+        total = total + zeit
+    print(total / len(times))
+
+    print("init_time:")
+    print(initend-programstart)

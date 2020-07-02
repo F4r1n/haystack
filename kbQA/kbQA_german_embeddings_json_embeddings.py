@@ -88,11 +88,38 @@ if __name__ == '__main__':
         # write documents to elasticsearch storage
         document_store.write_documents(docs_to_index)
 
-    # reader requires a qa fine-tuning so it is set to none
+    questions = [
+        "worauf sollte man auf Fähren achten?",
+        "wird die verkehrschilderkennung für alle kommen?",
+        "was beinhaltet der Autopilot?",
+        "wie viel verbaucht das Model 3?",
+        "fährt das auto wenn der stecker steckt?",
+        "Welche dimension haben die kleinen Sommerreifen?",
+        "wie viel zoll haben die Sommerreifen?",
+        "Werden UV-Strahlen beim Tesla geblockt?",
+
+        "Ich habe bei Tesla 500€ pro Rad bezahlt.",
+        "Tempomat Geschwindigkeit ändern.",
+        "die batterie sollte mindestens 50% haben."
+    ]
+    # auch hier wieder: Kleinschreibung zwingend notwendig!
+    # question = question.lower()
+    times = []
+
+    # Wir können aktuell keinen Reader verwenden, da diese scheinbar QA fine tuning voraussetzen
+    # Der Retriever holt anhand der embeddings die besten Treffer ran.
+    # get_answers() ohne reader nicht verwendbar
     finder = Finder(reader=None, retriever=retriever)
-    question = preprocessQuestion("fährt das auto wenn der stecker steckt?")
-    # get_answers only works with a reader attached, instead get the answer
-    # by comparing the embeddings
-    prediction = finder.get_answers_via_similar_questions(
-        question, top_k_retriever=5)
-    print_answers(prediction, details="all")
+
+    for question in questions:
+        start_time = time.time()
+        q = preprocessQuestion(question)
+        prediction = finder.get_answers_via_similar_questions(
+            question, top_k_retriever=5)
+        times.append(time.time() - start_time)
+        print_answers(prediction, details="minimal")
+
+    total = 0
+    for zeit in times:
+        total = total + zeit
+    print(total / len(times))
