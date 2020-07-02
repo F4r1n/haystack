@@ -17,6 +17,7 @@ from haystack.utils import print_answers
 def preprocessQuestion(text) -> str:
     text = text.lower()
     text = text.replace("ß", "ss")
+    text = text.replace("?", ".")
     return text
 
 
@@ -55,17 +56,17 @@ if __name__ == '__main__':
     # BERT-Model is trained to use the second extraction layer
     retriever = EmbeddingRetriever(
         document_store=document_store, embedding_model=os.getcwd() +
-        "\\kbQA\\bert-german-model",
+        "/kbQA/bert-german-model",
         gpu=True, model_format="transformers",
         emb_extraction_layer=-2)
     if POPULATE_DOCUMENT_STORE:
         # set path to directory containing the embeddings
-        doc_dir = os.getcwd() + "\\kbQA\\data\\tesla_embs.json"
+        doc_dir = os.getcwd() + "/kbQA/data/tesla_embs.json"
         # initialize dataframe with column names
         df = pd.DataFrame(
             columns=['name', 'text', 'question_emb', 'question'],)
         # open the file
-        with open(doc_dir, encoding="utf8") as file:
+        with open(doc_dir, encoding="utf-8") as file:
             # initialize question indexing
             i = 0
             # each line has multiple paragraphs and embeddings, read file line
@@ -83,10 +84,14 @@ if __name__ == '__main__':
                             "question": i},
                         ignore_index=True)
                     i = i + 1
+                    logging.info(f"lines read: {i}")
+
         # convert the dataframe to a dict
         docs_to_index = df.to_dict(orient="records")
+        logging.info("df.to_dict done")
         # write documents to elasticsearch storage
         document_store.write_documents(docs_to_index)
+        logging.info("docs written to document store")
 
     questions = [
         "worauf sollte man auf Fähren achten?",
@@ -112,11 +117,12 @@ if __name__ == '__main__':
     finder = Finder(reader=None, retriever=retriever)
 
     for question in questions:
-        start_time = time.time()
-        q = preprocessQuestion(question)
-        prediction = finder.get_answers_via_similar_questions(
-            question, top_k_retriever=5)
-        times.append(time.time() - start_time)
+        start_time = time.process_time() # Änderung: process_time() zählt nur die tatsächliche CPU time
+        question = preprocessQuestion(question)  # Änderung: Ergebnis von preprocessingQuestion ging in "q" aber wurde nicht weiter verwendet
+        print(f"QUESTION: {question}")
+        prediction = finder.get_answers_via_similar_questions(question, top_k_retriever=5)
+        end_time = time.process_time()
+        times.append(end_time - start_time)
         print_answers(prediction, details="minimal")
 
     total = 0
