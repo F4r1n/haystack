@@ -1,12 +1,9 @@
+from flask import Flask
 from haystack import Finder
 from haystack.database.elasticsearch import ElasticsearchDocumentStore
-from haystack.indexing.utils import convert_files_to_dicts
 from haystack.retriever.elasticsearch import EmbeddingRetriever
-from haystack.utils import print_answers
 import os
 import pandas as pd
-import time
-import subprocess
 from flask import Flask, json, request
 import logging
 
@@ -82,4 +79,4 @@ if __name__ == '__main__':
         emb_extraction_layer=-2)
     finder = Finder(reader=None, retriever=retriever)
 
-    api.run(host='0.0.0.0', debug=True)
+    api.run(host='0.0.0.0', port=80, debug=True)
