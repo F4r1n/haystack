@@ -2,7 +2,6 @@ import logging
 import tarfile
 import tempfile
 import zipfile
-from docx import Document
 from pathlib import Path
 from typing import Callable, List, Optional
 
@@ -40,12 +39,6 @@ def convert_files_to_dicts(dir_path: str, clean_func: Optional[Callable] = None,
         elif path.suffix.lower() == ".pdf":
             pages = pdf_converter.extract_pages(path)
             text = "\n".join(pages)
-        elif path.suffix.lower() == ".docx":
-            document = Document(path)
-            fullText = []
-            for para in document.paragraphs:
-                fullText.append(para.text)
-            text = '\n'.join(fullText)
         else:
             raise Exception(
                 f"Indexing of {path.suffix} files is not currently supported.")

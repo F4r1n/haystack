@@ -87,10 +87,11 @@ if __name__ == '__main__':
     times = []
 
     for question in questions:
-        start_time = time.time()
+        start_time = time.process_time()
         prediction = finder.get_answers(
-            question)
-        times.append(time.time() - start_time)
+            question, top_k_reader=5, top_k_retriever=5)
+        end_time = time.process_time()
+        times.append(end_time - start_time)
         print_answers(prediction, details="minimal")
 
     total = 0
