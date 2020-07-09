@@ -242,7 +242,7 @@ class FARMReader(BaseReader):
 
         # get answers from QA model
         predictions = self.inferencer.inference_from_dicts(
-            dicts=input_dicts, rest_api_schema=True, multiprocessing_chunksize=1
+            dicts=input_dicts, return_json=True, multiprocessing_chunksize=1
         )
         # assemble answers from all the different documents & format them.
         # For the "no answer" option, we collect all no_ans_gaps and decide how likely
@@ -250,26 +250,29 @@ class FARMReader(BaseReader):
         answers = []
         no_ans_gaps = []
         best_score_answer = 0
-        for pred in predictions:
+        # TODO once FARM returns doc ids again we can revert to using them inside the preds and remove
+        for pred, inp in zip(predictions, input_dicts):
             answers_per_document = []
             no_ans_gaps.append(pred["predictions"][0]["no_ans_gap"])
-            for a in pred["predictions"][0]["answers"]:
+            for ans in pred["predictions"][0]["answers"]:
                 # skip "no answers" here
-                if a["answer"]:
-                    cur = {"answer": a["answer"],
-                           "score": a["score"],
+                if self._check_no_answer(ans):
+                    pass
+                else:
+                    cur = {"answer": ans["answer"],
+                           "score": ans["score"],
                            # just a pseudo prob for now
-                           "probability": float(expit(np.asarray([a["score"]]) / 8)),  # type: ignore
-                           "context": a["context"],
-                           "offset_start": a["offset_answer_start"] - a["offset_context_start"],
-                           "offset_end": a["offset_answer_end"] - a["offset_context_start"],
-                           "offset_start_in_doc": a["offset_answer_start"],
-                           "offset_end_in_doc": a["offset_answer_end"],
-                           "document_id": a["document_id"]}
+                           "probability": float(expit(np.asarray([ans["score"]]) / 8)),  # type: ignore
+                           "context": ans["context"],
+                           "offset_start": ans["offset_answer_start"] - ans["offset_context_start"],
+                           "offset_end": ans["offset_answer_end"] - ans["offset_context_start"],
+                           "offset_start_in_doc": ans["offset_answer_start"],
+                           "offset_end_in_doc": ans["offset_answer_end"],
+                           "document_id": inp["document_id"]} #TODO revert to ans["docid"] once it is populated
                     answers_per_document.append(cur)
 
-                    if a["score"] > best_score_answer:
-                        best_score_answer = a["score"]
+                    if ans["score"] > best_score_answer:
+                        best_score_answer = ans["score"]
             # only take n best candidates. Answers coming back from FARM are sorted with decreasing relevance.
             answers += answers_per_document[:self.top_k_per_candidate]
 
@@ -405,6 +408,19 @@ class FARMReader(BaseReader):
         }
         return results
 
+
+    @staticmethod
+    def _check_no_answer(d: dict):
+        # check for correct value in "answer"
+        if d["offset_answer_start"] == 0 and d["offset_answer_end"] == 0:
+            assert d["answer"] == "is_impossible", f"Check for no answer is not working"
+
+        # check weather the model thinks there is no answer
+        if d["answer"] == "is_impossible":
+            return True
+        else:
+            return False
+
     @staticmethod
     def _calc_no_answer(no_ans_gaps: List[float], best_score_answer: float):
         # "no answer" scores and positive answers scores are difficult to compare, because
@@ -442,3 +458,23 @@ class FARMReader(BaseReader):
             )
         predictions = self.predict(question, documents, top_k)
         return predictions
+
+    @classmethod
+    def convert_to_onnx(cls, model_name_or_path, opset_version: int = 11, optimize_for: Optional[str] = None):
+        """
+        Convert a PyTorch BERT model to ONNX format and write to ./onnx-export dir. The converted ONNX model
+        can be loaded with in the `FARMReader` using the export path as `model_name_or_path` param.
+
+        Usage:
+            >>> from haystack.reader.farm import FARMReader
+            >>> FARMReader.convert_to_onnx(model_name_or_path="deepset/bert-base-cased-squad2", optimize_for="gpu_tensor_core")
+            >>> FARMReader(model_name_or_path=Path("onnx-export"))
+
+
+        :param opset_version: ONNX opset version
+        :param optimize_for: optimize the exported model for a target device. Available options
+                             are "gpu_tensor_core" (GPUs with tensor core like V100 or T4),
+                             "gpu_without_tensor_core" (most other GPUs), and "cpu".
+        """
+        inferencer = Inferencer.load(model_name_or_path, task_type="question_answering")
+        inferencer.model.convert_to_onnx(output_path=Path("onnx-export"), opset_version=opset_version, optimize_for=optimize_for)

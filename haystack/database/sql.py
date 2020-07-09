@@ -93,6 +93,15 @@ class SQLDocumentStore(BaseDocumentStore):
         return doc_ids
 
     def write_documents(self, documents: List[dict]):
+        """
+        Indexes documents for later queries.
+
+        :param documents: List of dictionaries in the format {"name": "<some-document-name>, "text": "<the-actual-text>"}.
+                          Optionally, you can also supply meta data via "meta": {"author": "someone", "url":"some-url" ...}
+
+        :return: None
+        """
+
         for doc in documents:
             row = Document(name=doc["name"], text=doc["text"], meta_data=doc.get("meta", {}))
             self.session.add(row)
@@ -109,3 +118,13 @@ class SQLDocumentStore(BaseDocumentStore):
             tags=row.tags
         )
         return document
+
+    def query_by_embedding(self,
+                           query_emb: List[float],
+                           filters: Optional[dict] = None,
+                           top_k: int = 10,
+                           index: Optional[str] = None) -> List[DocumentSchema]:
+
+        raise NotImplementedError("SQLDocumentStore is currently not supporting embedding queries. "
+                                  "Change the query type (e.g. by choosing a different retriever) "
+                                  "or change the DocumentStore (e.g. to ElasticsearchDocumentStore)")
