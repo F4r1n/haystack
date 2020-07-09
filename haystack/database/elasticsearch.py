@@ -23,7 +23,7 @@ class ElasticsearchDocumentStore(BaseDocumentStore):
         name_field: str = "name",
         external_source_id_field: str = "external_source_id",
         embedding_field: Optional[str] = None,
-        embedding_dim: Optional[str] = None,
+        embedding_dim: Optional[int] = None,
         custom_mapping: Optional[dict] = None,
         excluded_meta_data: Optional[list] = None,
         faq_question_field: Optional[str] = None,
@@ -49,8 +49,8 @@ class ElasticsearchDocumentStore(BaseDocumentStore):
                            If no Reader is used (e.g. in FAQ-Style QA) the plain content of this field will just be returned.
         :param name_field: Name of field that contains the title of the the doc
         :param external_source_id_field: If you have an external id (= non-elasticsearch) that identifies your documents, you can specify it here.
-        :param embedding_field: Name of field containing an embedding vector (Only needed when using the EmbeddingRetriever on top)
-        :param embedding_dim: Dimensionality of embedding vector (Only needed when using the EmbeddingRetriever on top)
+        :param embedding_field: Name of field containing an embedding vector (Only needed when using a dense retriever (e.g. DensePassageRetriever, EmbeddingRetriever) on top)
+        :param embedding_dim: Dimensionality of embedding vector (Only needed when using a dense retriever (e.g. DensePassageRetriever, EmbeddingRetriever) on top)
         :param custom_mapping: If you want to use your own custom mapping for creating a new index in Elasticsearch, you can supply it here as a dictionary.
         :param excluded_meta_data: Name of fields in Elasticsearch that should not be returned (e.g. [field_one, field_two]).
                                    Helpful if you have fields with long, irrelevant content that you don't want to display in results (e.g. embedding vectors).
@@ -113,10 +113,27 @@ class ElasticsearchDocumentStore(BaseDocumentStore):
         return doc_ids
 
     def write_documents(self, documents: List[dict]):
+        """
+        Indexes documents for later queries in Elasticsearch.
+
+        :param documents: List of dictionaries.
+                          Default format: {"name": "<some-document-name>, "text": "<the-actual-text>"}
+                          Optionally: Include meta data via {"name": "<some-document-name>,
+                          "text": "<the-actual-text>", "meta":{"author": "somebody", ...}}
+                          It can be used for filtering and is accessible in the responses of the Finder.
+                          Advanced: If you are using your own Elasticsearch mapping, the key names in the dictionary
+                          should be changed to what you have set for self.text_field and self.name_field .
+        :return: None
+        """
         for doc in documents:
             doc["_op_type"] = "create"
             doc["_index"] = self.index
-
+            # In order to have a flat structure in elastic + similar behaviour to the other DocumentStores,
+            # we "unnest" all value within "meta"
+            if "meta" in doc.keys():
+                for k, v in doc["meta"].items():
+                    doc[k] = v
+                del doc["meta"]
         bulk(self.client, documents, request_timeout=300)
 
     def get_document_count(self) -> int:
@@ -127,7 +144,6 @@ class ElasticsearchDocumentStore(BaseDocumentStore):
     def get_all_documents(self) -> List[Document]:
         result = scan(self.client, query={"query": {"match_all": {}}}, index=self.index)
         documents = [self._convert_es_hit_to_document(hit) for hit in result]
-
         return documents
 
     def query(
@@ -182,7 +198,14 @@ class ElasticsearchDocumentStore(BaseDocumentStore):
         documents = [self._convert_es_hit_to_document(hit) for hit in result]
         return documents
 
-    def query_by_embedding(self, query_emb: List[float], top_k: int = 10, candidate_doc_ids: Optional[List[str]] = None) -> List[Document]:
+    def query_by_embedding(self,
+                           query_emb: List[float],
+                           filters: Optional[dict] = None,
+                           top_k: int = 10,
+                           index: Optional[str] = None) -> List[Document]:
+        if index is None:
+            index = self.index
+
         if not self.embedding_field:
             raise RuntimeError("Please specify arg `embedding_field` in ElasticsearchDocumentStore()")
         else:
@@ -202,18 +225,21 @@ class ElasticsearchDocumentStore(BaseDocumentStore):
                 }
             }  # type: Dict[str,Any]
 
-            if candidate_doc_ids:
-                body["query"]["script_score"]["query"] = {
-                    "bool": {
-                        "should": [{"match_all": {}}],
-                        "filter": [{"terms": {"_id": candidate_doc_ids}}]
-                }}
+            if filters:
+                filter_clause = []
+                for key, values in filters.items():
+                    filter_clause.append(
+                        {
+                            "terms": {key: values}
+                        }
+                    )
+                body["query"]["bool"]["filter"] = filter_clause
 
             if self.excluded_meta_data:
                 body["_source"] = {"excludes": self.excluded_meta_data}
 
             logger.debug(f"Retriever query: {body}")
-            result = self.client.search(index=self.index, body=body)["hits"]["hits"]
+            result = self.client.search(index=index, body=body)["hits"]["hits"]
 
             documents = [self._convert_es_hit_to_document(hit, score_adjustment=-1) for hit in result]
             return documents
@@ -232,6 +258,35 @@ class ElasticsearchDocumentStore(BaseDocumentStore):
             question=hit["_source"].get(self.faq_question_field)
         )
         return document
+
+    def update_embeddings(self, retriever):
+        """
+        Updates the embeddings in the the document store using the encoding model specified in the retriever.
+        This can be useful if want to add or change the embeddings for your documents (e.g. after changing the retriever config).
+
+        :param retriever: Retriever
+        :return: None
+        """
+
+        if not self.embedding_field:
+            raise RuntimeError("Please specify arg `embedding_field` in ElasticsearchDocumentStore()")
+        docs = self.get_all_documents()
+        passages = [d.text for d in docs]
+        logger.info(f"Updating embeddings for {len(passages)} docs ...")
+        embeddings = retriever.embed_passages(passages)
+
+        assert len(docs) == len(embeddings)
+
+        doc_updates = []
+        for doc, emb in zip(docs, embeddings):
+            update = {"_op_type": "update",
+                      "_index": self.index,
+                      "_id": doc.id,
+                      "doc": {self.embedding_field: emb.tolist()},
+                      }
+            doc_updates.append(update)
+
+        bulk(self.client, doc_updates, request_timeout=300)
 
     def add_eval_data(self, filename: str, doc_index: str = "eval_document", label_index: str = "feedback"):
         """

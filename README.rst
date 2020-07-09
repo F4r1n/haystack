@@ -64,9 +64,10 @@ Resources
 
 - Tutorial 1  - Basic QA Pipeline: `Jupyter notebook  <https://github.com/deepset-ai/haystack/blob/master/tutorials/Tutorial1_Basic_QA_Pipeline.ipynb>`_  or `Colab <https://colab.research.google.com/github/deepset-ai/haystack/blob/master/tutorials/Tutorial1_Basic_QA_Pipeline.ipynb>`_
 - Tutorial 2  - Fine-tuning a model on own data: `Jupyter notebook <https://github.com/deepset-ai/haystack/blob/master/tutorials/Tutorial2_Finetune_a_model_on_your_data.ipynb>`_ or `Colab <https://colab.research.google.com/github/deepset-ai/haystack/blob/master/tutorials/Tutorial2_Finetune_a_model_on_your_data.ipynb>`_
-- Tutorial 3  - Basic QA Pipeline without Elasticsearch: `Jupyter notebook <https://github.com/deepset-ai/haystack/blob/master/tutorials/Tutorial3_Basic_QA_Pipeline_without_Elasticsearch.py>`_ or `Colab <https://colab.research.google.com/github/deepset-ai/haystack/blob/update-tutorials/tutorials/Tutorial3_Basic_QA_Pipeline_without_Elasticsearch.ipynb>`_
+- Tutorial 3  - Basic QA Pipeline without Elasticsearch: `Jupyter notebook <https://github.com/deepset-ai/haystack/blob/master/tutorials/Tutorial3_Basic_QA_Pipeline_without_Elasticsearch.ipynb>`_ or `Colab <https://colab.research.google.com/github/deepset-ai/haystack/blob/master/tutorials/Tutorial3_Basic_QA_Pipeline_without_Elasticsearch.ipynb>`_
 - Tutorial 4  - FAQ-style QA: `Jupyter notebook <https://github.com/deepset-ai/haystack/blob/master/tutorials/Tutorial4_FAQ_style_QA.ipynb>`__ or `Colab <https://colab.research.google.com/github/deepset-ai/haystack/blob/master/tutorials/Tutorial4_FAQ_style_QA.ipynb>`__
 - Tutorial 5  - Evaluation of the whole QA-Pipeline: `Jupyter noteboook <https://github.com/deepset-ai/haystack/blob/master/tutorials/Tutorial5_Evaluation.ipynb>`_ or `Colab <https://colab.research.google.com/github/deepset-ai/haystack/blob/master/tutorials/Tutorial5_Evaluation.ipynb>`_
+- Tutorial 6  - Better Retrievers via "Dense Passage Retrieval": `Jupyter noteboook <https://github.com/deepset-ai/haystack/blob/master/tutorials/Tutorial6_Better_Retrieval_via_DPR.ipynb>`_ or `Colab <https://colab.research.google.com/github/deepset-ai/haystack/blob/master/tutorials/Tutorial6_Better_Retrieval_via_DPR.ipynb>`_
 
 
 Quick Start
@@ -226,7 +227,7 @@ A simple REST API based on `FastAPI <https://fastapi.tiangolo.com/>`_ is provide
 
 To serve the API, run::
 
-    gunicorn haystack.api.application:app -b 0.0.0.0:80 -k uvicorn.workers.UvicornWorker
+    gunicorn rest_api.application:app -b 0.0.0.0:80 -k uvicorn.workers.UvicornWorker
 
 You will find the Swagger API documentation at http://127.0.0.1:80/docs
 
@@ -245,8 +246,15 @@ You will find the Swagger API documentation at http://127.0.0.1:80/docs
 7. Indexing PDF files
 ---------------------
 
-Haystack has a customizable PDF text extraction pipeline with cleaning functions for header, footers, and tables. It supports complex document layouts with multi-column text.
+Haystack has basic converters to extract text from PDFs. While it's almost impossible to cover all types, layouts and special cases in PDFs, the implementation covers the most common formats and provides basic cleaning functions to remove header, footers, and tables. Multi-Column text layouts are also supported.
+The converters are easily extendable, so that you can customize them for your PDFs if needed. 
 
-8. Development
+Example::
+
+    from haystack.indexing.file_converters.pdf import PDFToTextConverter    
+    converter = PDFToTextConverter(remove_header_footer=True, remove_numeric_tables=True, valid_languages=["de","en"])
+    pages = converter.extract_pages(file_path=file)
+
+8. Tests
 -------------------
 * Unit tests can be executed by running :code:`tox`.

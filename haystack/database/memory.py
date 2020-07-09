@@ -8,11 +8,22 @@ class InMemoryDocumentStore(BaseDocumentStore):
         In-memory document store
     """
 
-    def __init__(self):
-        self.docs = {}
-        self.doc_tags = {}
+    def __init__(self, embedding_field: Optional[str] = None):
+        self.docs = {}  # type: Dict[str, Any]
+        self.doc_tags = {}  # type: Dict[str, Any]
+        self.embedding_field = embedding_field
+        self.index = None
 
     def write_documents(self, documents: List[dict]):
+        """
+        Indexes documents for later queries.
+
+        :param documents: List of dictionaries in the format {"name": "<some-document-name>, "text": "<the-actual-text>"}.
+                          Optionally, you can also supply "tags": ["one-tag", "another-one"]
+                          or additional meta data via "meta": {"author": "someone", "url":"some-url" ...}
+
+        :return: None
+        """
         import hashlib
 
         if documents is None:
@@ -63,23 +74,42 @@ class InMemoryDocumentStore(BaseDocumentStore):
         )
         return document
 
-    def query_by_embedding(self, query_emb: List[float], top_k: int = 10, candidate_doc_ids: Optional[List[str]] = None) -> List[Document]:
-        from haystack.api import config
+    def query_by_embedding(self,
+                           query_emb: List[float],
+                           filters: Optional[dict] = None,
+                           top_k: int = 10,
+                           index: Optional[str] = None) -> List[Document]:
+
         from numpy import dot
         from numpy.linalg import norm
 
-        embedding_field_name = config.EMBEDDING_FIELD_NAME
-        if embedding_field_name is None:
+        if filters:
+            raise NotImplementedError("Setting `filters` is currently not supported in "
+                                      "InMemoryDocumentStore.query_by_embedding(). Please remove filters or "
+                                      "use a different DocumentStore (e.g. ElasticsearchDocumentStore).")
+
+        if self.embedding_field is None:
             return []
 
         if query_emb is None:
             return []
 
         candidate_docs = [self._convert_memory_hit_to_document(
-            (doc, dot(query_emb, doc[embedding_field_name]) / (norm(query_emb) * norm(doc[embedding_field_name]))), doc_id=idx) for idx, doc in self.docs.items()
+            (doc, dot(query_emb, doc[self.embedding_field]) / (norm(query_emb) * norm(doc[self.embedding_field]))), doc_id=idx) for idx, doc in self.docs.items()
         ]
 
         return sorted(candidate_docs, key=lambda x: x.query_score, reverse=True)[0:top_k]
+
+    def update_embeddings(self, retriever):
+        """
+        Updates the embeddings in the the document store using the encoding model specified in the retriever.
+        This can be useful if want to add or change the embeddings for your documents (e.g. after changing the retriever config).
+
+        :param retriever: Retriever
+        :return: None
+        """
+        #TODO
+        raise NotImplementedError("update_embeddings() is not yet implemented for this DocumentStore")
 
     def get_document_ids_by_tags(self, tags: Union[List[Dict[str, Union[str, List[str]]]], Dict[str, Union[str, List[str]]]]) -> List[str]:
         """

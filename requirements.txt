@@ -1,4 +1,5 @@
-farm==0.4.3
+farm==0.4.5
+--find-links=https://download.pytorch.org/whl/torch_stable.html
 fastapi
 uvicorn
 gunicorn
@@ -11,3 +12,6 @@ tox
 coverage
 langdetect # for PDF conversions
 # optional: sentence-transformers
+#temporarily (used for DPR downloads)
+wget
+python-multipart
