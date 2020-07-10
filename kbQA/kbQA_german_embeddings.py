@@ -5,7 +5,7 @@ import pandas as pd
 from haystack import Finder
 from haystack.database.elasticsearch import ElasticsearchDocumentStore
 from haystack.indexing.utils import convert_files_to_dicts
-from haystack.retriever.elasticsearch import EmbeddingRetriever
+from haystack.retriever.dense import EmbeddingRetriever
 from haystack.utils import print_answers
 
 

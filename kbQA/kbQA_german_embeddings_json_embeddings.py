@@ -8,7 +8,7 @@ import numpy as np
 from haystack import Finder
 from haystack.database.elasticsearch import ElasticsearchDocumentStore
 from haystack.indexing.utils import convert_files_to_dicts
-from haystack.retriever.elasticsearch import EmbeddingRetriever
+from haystack.retriever.dense import EmbeddingRetriever
 from haystack.utils import print_answers
 
 # custom cleaning function to match the Sense.AI.Tion BERT-Model
@@ -117,10 +117,13 @@ if __name__ == '__main__':
     finder = Finder(reader=None, retriever=retriever)
 
     for question in questions:
-        start_time = time.process_time() # Änderung: process_time() zählt nur die tatsächliche CPU time
-        question = preprocessQuestion(question)  # Änderung: Ergebnis von preprocessingQuestion ging in "q" aber wurde nicht weiter verwendet
+        # Änderung: process_time() zählt nur die tatsächliche CPU time
+        start_time = time.process_time()
+        # Änderung: Ergebnis von preprocessingQuestion ging in "q" aber wurde nicht weiter verwendet
+        question = preprocessQuestion(question)
         print(f"QUESTION: {question}")
-        prediction = finder.get_answers_via_similar_questions(question, top_k_retriever=5)
+        prediction = finder.get_answers_via_similar_questions(
+            question, top_k_retriever=5)
         end_time = time.process_time()
         times.append(end_time - start_time)
         print_answers(prediction, details="minimal")
