@@ -1,0 +1,1 @@
+Privoxy ist ein Webproxy mit fortschrittlichen Filtermöglichkeiten zum Schutz der Privatsphäre, zum Filtern von Webseiten-Inhalten, Verwaltung von HTTP-Cookies, Zugriffskontrolle, Entfernen von Werbung, Popups usw. Er unterstützt sowohl alleinstehende Systeme als auch Netzwerke mit mehreren Benutzern.

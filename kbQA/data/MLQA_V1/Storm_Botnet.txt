@@ -1,0 +1,1 @@
+Das Storm Botnet wurde zum ersten Mal im Januar 2007 entdeckt, als der Storm Worm etwa 8 % der Malware auf Windows-Betriebssystemen ausmachte.

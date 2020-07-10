@@ -1,0 +1,1 @@
+2000 – DragonBall SZ, MC68SZ328 (Super VZ): 66 MHz / 10,8 MIPSDie nachfolgenden Mikrocontroller der Serie DragonBall MX, die später als Freescale i.MX (MC9328MX, MCIMX) bezeichnet wurden, sind für ähnliche Anwendungen wie die früheren DragonBall-Geräte gedacht, basieren jedoch auf einem ARM9- oder ARM11-Prozessorkern anstelle eines 68000-Kerns.

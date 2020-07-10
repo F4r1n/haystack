@@ -1,0 +1,2 @@
+GNUmed wird primär für elektronische Gesundheitsakten genutzt. Es bietet aber auch, Mittel zur Archivierung von Aufzeichnungsdokumenten sowie das Sammeln von Metadaten über diese Aufzeichnungen.
+Das Wiki beinhaltet eine Sektion mit dem Namen „WhatCanIActuallyDOWithGNUmedToday“ (deutsch „Was man kann ich bereits heute eigentlich mit GNUmed tun“), diese gibt einen größeren Überblick zu diesem Thema. Jede Veröffentlichung fügt weitere Features hinzu.

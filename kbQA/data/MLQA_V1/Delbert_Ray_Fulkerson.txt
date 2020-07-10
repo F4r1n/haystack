@@ -1,0 +1,1 @@
+Delbert Ray Fulkerson (* 14. August 1924 in Tamms (Illinois); † 10. Januar 1976 in Ithaca (New York)) war ein US-amerikanischer Mathematiker. Sein bekanntester Beitrag war die Mitentwicklung des Ford-Fulkerson-Algorithmus, einem der meistgenutzten Algorithmen zur Berechnung maximaler Flüsse in Netzwerken.

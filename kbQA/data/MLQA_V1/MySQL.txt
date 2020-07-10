@@ -1,0 +1,1 @@
+Der Name MySQL setzt sich zusammen aus dem Vornamen My, den die Tochter des MySQL-AB-Mitbegründers Michael Widenius trägt, und SQL.

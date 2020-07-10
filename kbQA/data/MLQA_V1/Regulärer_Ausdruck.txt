@@ -1,0 +1,1 @@
+Quantoren (englisch quantifier, auch Quantifizierer oder Wiederholungsfaktoren) erlauben es, den vorherigen Ausdruck in verschiedener Vielfachheit in der Zeichenkette zuzulassen.

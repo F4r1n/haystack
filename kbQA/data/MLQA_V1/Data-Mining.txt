@@ -1,0 +1,2 @@
+Regressionsanalyse: Identifizierung von Beziehungen zwischen (mehreren) abhängigen und unabhängigen Variablen
+Marktsegmentierung, beispielsweise Kunden in Bezug auf ähnliches Kaufverhalten bzw. Interessen für gezielte Werbemaßnahmen

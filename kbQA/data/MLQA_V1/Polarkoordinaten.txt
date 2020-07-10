@@ -1,0 +1,2 @@
+Sein Werk umfasste jedoch nur einen Teil des Koordinatensystems.In seiner Abhandlung Über Spiralen beschreibt Archimedes eine Spirallinie mit einer Funktion, deren Radius sich abhängig von seinem Winkel ändert.
+Es gibt verschiedene Beschreibungen, um das Polarkoordinatensystem als Teil eines formalen Koordinatensystems zu definieren. Die gesamte Historie zu diesem Thema wird in dem Buch Origin of Polar Coordinates (Ursprung der Polarkoordinaten) des Harvard-Professors Julian Coolidge zusammengefasst und erläutert.

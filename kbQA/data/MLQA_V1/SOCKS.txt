@@ -1,0 +1,1 @@
+Anders als bei SOCKS 4 wird vor der eigentlichen Verbindungsanfrage eine „version identifier/method selection message“ gesendet. Diese Nachricht enthält verschiedene Authentifizierungsmethoden, die der Client akzeptiert und von denen sich der Server eine zur Verwendung aussucht.

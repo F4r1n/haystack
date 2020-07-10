@@ -1,0 +1,1 @@
+Die Codes bestehen aus zwei Teilen, die durch einen Bindestrich voneinander getrennt sind. Der erste Teil gibt den Landescode gemäß ISO 3166-1 (für  Peru PE), der zweite den Code für die Region wieder.

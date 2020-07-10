@@ -1,0 +1,1 @@
+In der Technischen Mechanik unterscheidet man zwischen statischen und dynamischen (bzw. harmonischen) Kräften. Statische Kräfte sind diejenigen, die zeitlich unverändert wirken, dynamische Kräfte sind zeitlich veränderliche Kräfte. Bei sehr langsamer zeitlicher Veränderung spricht man von quasistatischen Kräften.

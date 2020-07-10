@@ -1,0 +1,4 @@
+QS 9000QS 9000 war ein Qualitätsstandard, der gemeinschaftlich von den Automobilherstellern General Motors, Chrysler und Ford entwickelt wurde. Er wurde ab 1994 in der Automobilindustrie angewendet. Der Standard teilte sich in drei Abschnitte.
+Teil 3: Systemanforderungen, die für einzelne Hersteller spezifisch sind.Am 14. Dezember 2006 wurden alle drei Teile zurückgezogen. Die QS 9000 wird nun von der ISO 9001 und der ISO/TS 16949 ersetzt.
+IATF 16949 Qualitätsmanagementsysteme – Besondere Anforderungen bei Anwendung von ISO 9001:2008 für die Serien- und Ersatzteil-Produktion in der Automobilindustrie
+ISO/TS 29001 Erdöl-, petrochemische und Erdgasindustrie – Bereichsspezifische Qualitätsmanagementsysteme – Anforderungen an Organisationen für Produkt- und Dienstleistungsbereitstellung

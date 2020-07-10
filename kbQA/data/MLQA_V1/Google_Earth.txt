@@ -1,0 +1,1 @@
+Die Qualität der Aufnahmen ist unterschiedlich. Die Detailauflösung der Rasterdaten beträgt flächendeckend meist 15 m (ein Pixel entspricht 15 m × 15 m), in einigen Ballungsgebieten sind teilweise auch Auflösungen bis zu 15 cm verfügbar. Bei dieser Auflösung lassen sich einzelne Menschen als solche erkennen, wobei ein günstiger Schattenwurf hilfreich ist.

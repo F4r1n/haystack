@@ -1,0 +1,1 @@
+DKMS wird in einigen Linux-Distributionen wie Debian (ab Version Squeeze), Ubuntu 8.10 (und höher) oder Fedora eingesetzt.

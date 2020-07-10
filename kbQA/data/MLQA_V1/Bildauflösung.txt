@@ -1,0 +1,2 @@
+Die Grafikgröße kann in zwei Varianten dargestellt werden:
+Die Farbtiefe gibt die Feinheit der Abstufungen an, mit der die Farbe einzelner Bildelemente einer Rastergrafik wiedergegeben werden kann. Neben der Pixelanzahl ist sie eine der bestimmenden Größen einer Rastergrafik.

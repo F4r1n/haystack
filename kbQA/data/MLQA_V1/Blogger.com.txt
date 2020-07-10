@@ -1,0 +1,1 @@
+Im Jahr 2006 wurden alle Blogs, die mit einem Google-Konto erstellt worden waren, auf die Google-Server übertragen. Mit der Migration wurden einige Merkmale eingeführt, zum Beispiel: Labels, Drag & Drop beim Layout, Berechtigungen (Private Blogs) und Web-Feeds.

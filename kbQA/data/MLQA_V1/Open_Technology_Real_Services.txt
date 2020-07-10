@@ -1,0 +1,1 @@
+Anfänglich nur mit einer MySQL-Datenbank (auch MariaDB) im Hintergrund, benutzt OTRS mittlerweile auch PostgreSQL-, Ingres-, Oracle- und DB2-Datenbanken sowie bis zur Version 4 Microsoft SQL Server. OTRS kann sowohl auf allen gängigen unixoiden Betriebssystemen (Linux, Mac OS X, FreeBSD usw.) als auch unter Microsoft Windows (einschließlich der OTRS-Version 4) eingesetzt werden.

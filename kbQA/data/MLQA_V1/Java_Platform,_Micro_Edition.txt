@@ -1,0 +1,1 @@
+Seit dem 22. Dezember 2006 ist der Quellcode von Suns Referenzimplementierung von Java ME offengelegt und wird im Rahmen eines Projektes namens phoneME als freie Software unter den Bedingungen der GNU General Public License (GPL) verbreitet.

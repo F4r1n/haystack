@@ -1,0 +1,1 @@
+Viele neue HTML5- und CSS 3-Features stehen bereits in mindestens einem der großen Browser zur Verfügung. Modernizr erkennt, ob der aktuelle Browser ein bestimmtes Feature implementiert hat. Dies ermöglicht es Entwicklern die Vorteile neuer Features in unterstützenden Browsern zu erzielen und Fallbacks für Browser zu entwickeln, die diese neuen Features nicht bieten.

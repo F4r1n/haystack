@@ -1,0 +1,1 @@
+Hier wird ein Eingabewert mit 6-Bit angenommen. Der 4-Bit-Ausgabewert ergibt sich durch die Zeile mit den beiden äußeren Bits und die Spalte mit den 4 inneren Bits des Eingabewertes. Im Beispiel hat der Eingabewert "011011" die äußeren Bits "01" und die inneren Bits "1101". Der zugehörige Ausgabewert wäre demnach "1001".

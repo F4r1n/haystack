@@ -1,0 +1,1 @@
+Das Crank-Nicolson-Verfahren basiert auf der Trapezregel in der Zeit.

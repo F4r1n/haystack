@@ -1,0 +1,1 @@
+Er arbeitete in den Bell Labs und half die awk- und AMPL-Programmiersprache zu entwickeln. Des Weiteren schrieb er viele Unix-Programme, unter ihnen „ditroff“. Sowohl in „K&R C“ als auch in „awk“ steht das K für Kernighan.

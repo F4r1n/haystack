@@ -1,0 +1,1 @@
+Microsoft begann mit der Entwicklung des .NET Frameworks in den späten 1990ern, ursprünglich unter dem Namen der Next Generation Windows Services (NGWS). Gegen Ende des Jahres 2000 wurden die ersten Betaversionen von .NET 1.0 veröffentlicht.

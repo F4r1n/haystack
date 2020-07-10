@@ -1,0 +1,2 @@
+Das Deuteron ist zwar NMR-aktiv, taucht aber aufgrund der grob abweichenden Frequenz in H-NMR-Spektren nicht auf. Zugabe von etwas schwerem Wasser lässt daher Linien im Spektrum einer Probe verschwinden, die von H-Atomen stammen, welche innerhalb der Relaxationszeit vielmals mit dem Lösungsmittel ausgetauscht werden.
+Ab 1945 wurde in den USA der Girdler-Sulfid-Prozess im großindustriellen Umfang eingesetzt, die ersten Schwerwasserreaktoren gingen 1953 in Betrieb. Die Anreicherungsanlagen wurden zunächst von DuPont betrieben und 1989 von Westinghouse Electric übernommen.

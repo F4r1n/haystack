@@ -1,0 +1,1 @@
+Die physische Organisation einer Datenbank wird von Partitionierung, Indizes, Caching, Views, OLAP-Würfel und transaktionalen Aspekten wie Write-Ahead-Logging stark beeinflusst. Unter der Berücksichtigung all dieser Einflüsse stellt sich heraus, dass OLTP-Systeme eher zeilenorientiert, OLAP-Systeme eine Balance aus Zeilen- und Spaltenorientierung anstreben.

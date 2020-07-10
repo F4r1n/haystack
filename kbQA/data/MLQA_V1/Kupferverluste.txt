@@ -1,0 +1,1 @@
+Als Kupferverluste oder Wicklungsverluste bezeichnet man die bei allen Spulen in Transformatoren, Elektromotoren, Generatoren und Elektromagneten auftretenden Stromwärmeverluste. Die Verluste entstehen überwiegend durch den ohmschen Widerstand der Kupferwicklung.

@@ -1,0 +1,1 @@
+Die Summierung der Folgenglieder ergibt die geometrische Reihe.

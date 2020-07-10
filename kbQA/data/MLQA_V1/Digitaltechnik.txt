@@ -1,0 +1,1 @@
+In der Digitaltechnik können spezielle Entwicklerwerkzeuge im Rahmen des Computer-aided engineering (CAE) und Beschreibungssprachen wie Very High Speed Integrated Circuit Hardware Description Language (VHDL) oder Verilog bei der schnellen Entwicklung neuer Anwendungen und Schaltungen eingesetzt werden.
