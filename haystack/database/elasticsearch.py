@@ -282,7 +282,8 @@ class ElasticsearchDocumentStore(BaseDocumentStore):
             update = {"_op_type": "update",
                       "_index": self.index,
                       "_id": doc.id,
-                      "doc": {self.embedding_field: emb.tolist()},
+                      # "doc": {self.embedding_field: emb.tolist()},
+                      "doc": {self.embedding_field: emb}
                       }
             doc_updates.append(update)
 

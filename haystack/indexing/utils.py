@@ -44,7 +44,7 @@ def convert_files_to_dicts(dir_path: str, clean_func: Optional[Callable] = None,
                 f"Indexing of {path.suffix} files is not currently supported.")
 
         if clean_func:
-            text = clean_func(text)
+            text = clean_func(path.name, text)
 
         if split_paragraphs:
             for para in text.split("\n\n"):
