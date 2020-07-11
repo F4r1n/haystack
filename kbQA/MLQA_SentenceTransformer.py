@@ -87,7 +87,7 @@ def main():
     model_exists = os.path.isfile(
         './kbQA/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin')
     if not model_exists:
-        logging.info("Starting model download (700MB) ...")
+        logging.info("Starting model download (about 700MB) ...")
         urllib.request.urlretrieve(
             "https://cdn.huggingface.co/mrm8488/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin",
             "./kbQA/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin")
@@ -117,7 +117,6 @@ def main():
             dir_path=data_path, clean_func=clean_text, split_paragraphs=True)
 
         logging.info("files to dicts done.")
-        # logging.info("first 10 dicts:", dicts[0:10])
         # write dicts containing the texts to the database
         document_store.write_documents(dicts)
         logging.info("documents to store written.")
@@ -179,12 +178,12 @@ def main():
                              total / len(times))
                 logging.info("Questions answered correctly: %d/%d (%f)",
                              len(results), len(times), len(results)/len(times))
-                logging.info("Failed questions:")
+                logging.debug("Failed questions:")
                 for fail in failed:
-                    logging.info("Question: %s", fail["q"])
-                    logging.info("Correct Answer: %s", fail["correct"])
+                    logging.debug("Question: %s", fail["q"])
+                    logging.debug("Correct Answer: %s", fail["correct"])
                     for answer in fail["a"]:
-                        logging.info(answer)
+                        logging.debug(answer)
 
         except Exception as e:
             traceback.print_exc()
