@@ -84,14 +84,14 @@ def clean_text(path_name: str, text: str) -> str:
 
 def main():
     # fetch model files if not present. not hosted in git repo
-    model_exists = os.path.isfile(
-        './kbQA/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin')
-    if not model_exists:
-        logging.info("Starting model download (about 700MB) ...")
-        urllib.request.urlretrieve(
-            "https://cdn.huggingface.co/mrm8488/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin",
-            "./kbQA/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin")
-        logging.info("model successfully downloaded")
+    # model_exists = os.path.isfile(
+    #     './kbQA/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin')
+    # if not model_exists:
+    #     logging.info("Starting model download (about 700MB) ...")
+    #     urllib.request.urlretrieve(
+    #         "https://cdn.huggingface.co/mrm8488/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin",
+    #         "./kbQA/bert-multi-cased-finetuned-xquadv1/pytorch_model.bin")
+    #     logging.info("model successfully downloaded")
     # start Elasticsearch
     if LAUNCH_ELASTICSEARCH:
         logging.info("Starting Elasticsearch ...")
@@ -136,10 +136,10 @@ def main():
 
     # reader wont be used in the retrieval because results take longer and the quality is worse
     # still has to be initialized
-    reader = TransformersReader(model="./kbQA/" + reader_model_name,
-                                tokenizer="./kbQA/" + reader_model_name,
-                                use_gpu=-1)
-    finder = Finder(retriever=retriever, reader=reader)
+    # reader = TransformersReader(model="./kbQA/" + reader_model_name,
+    #                             tokenizer="./kbQA/" + reader_model_name,
+    #                             use_gpu=-1)
+    finder = Finder(retriever=retriever, reader=None)
 
     if TEST:
         try:

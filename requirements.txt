@@ -1,5 +1,6 @@
 farm==0.4.5
 --find-links=https://download.pytorch.org/whl/torch_stable.html
+transformers>=3.0.2
 fastapi
 uvicorn
 gunicorn
@@ -15,3 +16,5 @@ langdetect # for PDF conversions
 #temporarily (used for DPR downloads)
 wget
 python-multipart
+somajo
+sentence-transformers

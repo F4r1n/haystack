@@ -13,17 +13,10 @@ RUN pip install -e .
 # copy code
 COPY haystack /home/user/haystack
 COPY rest_api /home/user/rest_api
-
-# copy saved FARM models
-COPY README.rst models* /home/user/models
-
-# optional : copy sqlite db if needed for testing
-#COPY qa.db /home/user/
-
-# optional: copy data directory containing docs for indexing
-#COPY data /home/user/data
+COPY kbQA/MLQA_api.py /home/user/kbQA/MLQA_api.py
+COPY kbQA/data/MLQA_V1 /home/user/kbQA/data/MLQA_V1
 
 EXPOSE 8000
 
 # cmd for running the API
-CMD ["gunicorn", "rest_api.application:app",  "-b", "0.0.0.0", "-k", "uvicorn.workers.UvicornWorker", "--workers", "2"]
+CMD [ "python", "./kbQA/MLQA_api.py" ]

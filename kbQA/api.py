@@ -79,4 +79,4 @@ if __name__ == '__main__':
         emb_extraction_layer=-2)
     finder = Finder(reader=None, retriever=retriever)
 
-    api.run(host='0.0.0.0', port=80, debug=True)
+    api.run(host='0.0.0.0', port=8000, debug=True)
