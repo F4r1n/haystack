@@ -178,12 +178,12 @@ def main():
                              total / len(times))
                 logging.info("Questions answered correctly: %d/%d (%f)",
                              len(results), len(times), len(results)/len(times))
-                logging.debug("Failed questions:")
+                logging.info("Failed questions:")
                 for fail in failed:
-                    logging.debug("Question: %s", fail["q"])
-                    logging.debug("Correct Answer: %s", fail["correct"])
+                    logging.info("Question: %s", fail["q"])
+                    logging.info("Correct Answer: %s", fail["correct"])
                     for answer in fail["a"]:
-                        logging.debug(answer)
+                        logging.info(answer)
 
         except Exception as e:
             traceback.print_exc()

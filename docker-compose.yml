@@ -1,17 +1,17 @@
 version: "3"
 services:
   haystack:
+    # already fills the databse with documents when an empty instance is found
     image: "haystack:latest"
     ports:
+      #Query api like this when the container is ready (see logs):
+      # [GET] http://0.0.0.0:8000/answer?q=Wie war die Konsistenz des Schlamms nach dem Ausbruch von St. Helens?
       - 8000:8000
     restart: always
     depends_on:
       - elasticsearch
   elasticsearch:
-    # This will start an empty elasticsearch instance (so you have to add your documents yourself)
     image: "elasticsearch:7.6.2"
-    # If you want a demo image instead that is "ready-to-query" with some indexed Game of Thrones articles:
-    # image: "deepset/elasticsearch-game-of-thrones"
     ports:
       - 9200:9200
     environment:
